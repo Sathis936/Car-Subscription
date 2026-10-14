@@ -2123,7 +2123,8 @@ body.mobile-menu-open {
    15. Footer (Symmetric Equal Padding & Prestigious Obsidian Luxury Styling)
    -------------------------------------------------------------------------- */
 .site-footer {
-  margin-top: auto;
+  margin-top: auto !important;
+  flex-shrink: 0;
   background: linear-gradient(180deg, #090d16 0%, #04060b 100%) !important;
   border-top: 2px solid rgba(249, 115, 22, 0.45) !important;
   box-shadow: 0 -12px 36px rgba(0, 0, 0, 0.45);
@@ -2132,6 +2133,7 @@ body.mobile-menu-open {
   width: 100%;
   color: #cbd5e1;
 }
+
 
 .site-footer .footer-grid {
   display: grid;
