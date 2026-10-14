@@ -1222,6 +1222,22 @@ function initBlogPage() {
     }
   };
 
+  // Helper: Switch Active Category Tab
+  function setCategory(category) {
+    activeCategory = category || 'all';
+    filterBtns.forEach((b) => {
+      const cat = b.getAttribute('data-category');
+      if (cat === activeCategory) {
+        b.classList.add('active', 'btn-primary');
+        b.classList.remove('btn-outline');
+      } else {
+        b.classList.remove('active', 'btn-primary');
+        b.classList.add('btn-outline');
+      }
+    });
+    applyBlogFilters();
+  }
+
   // Live Category and Search Filter Execution
   function applyBlogFilters() {
     let visibleCount = 0;
@@ -1248,15 +1264,25 @@ function initBlogPage() {
   // Category Tab Clicks
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach((b) => {
-        b.classList.remove('active', 'btn-primary');
-        b.classList.add('btn-outline');
-      });
-      btn.classList.add('active', 'btn-primary');
-      btn.classList.remove('btn-outline');
+      const cat = btn.getAttribute('data-category') || 'all';
+      setCategory(cat);
+    });
+  });
 
-      activeCategory = btn.getAttribute('data-category') || 'all';
-      applyBlogFilters();
+  // Category Badges on Cards (Click to Filter)
+  document.querySelectorAll('.blog-category-badge').forEach((badge) => {
+    badge.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const cat = badge.getAttribute('data-category');
+      if (cat) {
+        setCategory(cat);
+        const articleGrid = document.getElementById('articleGrid');
+        if (articleGrid) {
+          articleGrid.scrollIntoView({ behavior: 'smooth' });
+        }
+        showToast(`Filtered by topic: ${cat.toUpperCase()}`, 'info');
+      }
     });
   });
 
@@ -1273,36 +1299,10 @@ function initBlogPage() {
     resetBtn.addEventListener('click', () => {
       if (searchInput) searchInput.value = '';
       searchQuery = '';
-      activeCategory = 'all';
-
-      filterBtns.forEach((b) => {
-        const cat = b.getAttribute('data-category');
-        if (cat === 'all') {
-          b.classList.add('active', 'btn-primary');
-          b.classList.remove('btn-outline');
-        } else {
-          b.classList.remove('active', 'btn-primary');
-          b.classList.add('btn-outline');
-        }
-      });
-
-      applyBlogFilters();
+      setCategory('all');
       showToast('Filters reset. All mobility articles visible.', 'info');
     });
   }
-
-  // Make Entire Article Cards Clickable (Redirects to Target Page)
-  blogCards.forEach((card) => {
-    card.addEventListener('click', (e) => {
-      // If clicking button or link inside card, let that handle it directly
-      if (e.target.closest('a') || e.target.closest('button')) return;
-
-      const targetUrl = card.getAttribute('data-target-url');
-      if (targetUrl) {
-        window.location.href = targetUrl;
-      }
-    });
-  });
 
   // Quick Read Modal Functionality
   function openArticleModal(articleId) {
@@ -1357,6 +1357,11 @@ function initBlogPage() {
     articleModal.classList.add('open');
     articleModal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+
+    // Update URL hash without jumping page
+    try {
+      history.replaceState(null, '', '#' + articleId);
+    } catch (_) {}
   }
 
   function closeArticleModal() {
@@ -1364,15 +1369,55 @@ function initBlogPage() {
     articleModal.classList.remove('open');
     articleModal.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
+
+    // Remove hash if it references an article
+    try {
+      if (window.location.hash.startsWith('#article-') || window.location.hash === '#cover-story') {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    } catch (_) {}
   }
 
-  // Hook up Quick Read Buttons
-  document.querySelectorAll('.blog-read-modal-btn').forEach((btn) => {
-    btn.addEventListener('click', (e) => {
+  // Hook up Quick Read Buttons and Modal Triggers (Title, Image, Buttons)
+  document.querySelectorAll('.blog-read-modal-btn, .blog-read-modal-trigger').forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
       e.stopPropagation();
       e.preventDefault();
-      const articleId = btn.getAttribute('data-article-id');
-      openArticleModal(articleId);
+      const articleId = trigger.getAttribute('data-article-id') || trigger.closest('[data-article-id]')?.getAttribute('data-article-id');
+      if (articleId) {
+        openArticleModal(articleId);
+      }
+    });
+  });
+
+  // Card Click Behavior:
+  // - Clicking .blog-card-redirect-btn directly navigates to its page (pricing, fleet, how-it-works, etc.)
+  // - Clicking anywhere else on the card opens the article reader modal
+  const allInteractiveCards = document.querySelectorAll('.blog-post-card, .featured-lead-card');
+  allInteractiveCards.forEach((card) => {
+    card.addEventListener('click', (e) => {
+      // If clicking directly on or within redirect button, let browser perform page redirect
+      if (e.target.closest('.blog-card-redirect-btn')) {
+        return;
+      }
+
+      // If clicking category badge, let badge listener handle it
+      if (e.target.closest('.blog-category-badge')) {
+        return;
+      }
+
+      // If clicking a standard external/nav link, let it proceed
+      const link = e.target.closest('a');
+      if (link && !link.classList.contains('blog-read-modal-trigger') && link.getAttribute('href') && !link.getAttribute('href').startsWith('javascript:') && !link.getAttribute('href').startsWith('#')) {
+        return;
+      }
+
+      // Otherwise, open reader modal for this article
+      e.preventDefault();
+      const articleId = card.getAttribute('data-article-id');
+      if (articleId && blogArticlesData[articleId]) {
+        openArticleModal(articleId);
+      }
     });
   });
 
@@ -1389,11 +1434,37 @@ function initBlogPage() {
     });
   }
 
+  // Keyboard Navigation: Escape key closes modal or clears search
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && articleModal && articleModal.classList.contains('open')) {
-      closeArticleModal();
+    if (e.key === 'Escape') {
+      if (articleModal && articleModal.classList.contains('open')) {
+        closeArticleModal();
+      } else if (searchInput && (document.activeElement === searchInput || searchInput.value.length > 0)) {
+        searchInput.value = '';
+        searchQuery = '';
+        applyBlogFilters();
+      }
     }
   });
+
+  // Deep-linking: Support initial URL hash (e.g. #article-1 or #cover-story) or query params (?category=ev&article=article-2)
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const catParam = urlParams.get('category');
+    const artParam = urlParams.get('article');
+    const hash = window.location.hash ? window.location.hash.replace('#', '') : null;
+
+    if (catParam) {
+      setCategory(catParam);
+    }
+
+    const targetArticleId = artParam || hash;
+    if (targetArticleId && blogArticlesData[targetArticleId]) {
+      setTimeout(() => {
+        openArticleModal(targetArticleId);
+      }, 150);
+    }
+  } catch (_) {}
 
   // Newsletter Form Handler with Strict Email Format Verification
   const newsletterForm = document.getElementById('blogNewsletterForm');
@@ -1433,6 +1504,7 @@ function initBlogPage() {
     });
   }
 }
+
 
 /* --------------------------------------------------------------------------
    14. Services Page Interactive System (Filter & Booking Modal)
