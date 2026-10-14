@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — VeloceDrive Car Subscription</title>
+  <meta name="description" content="Sign in to your VeloceDrive account to manage your active vehicle, track mileage, or enroll as a new verified driver." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='24' height='24' rx='5' fill='%230b0f19'/%3E%3Cpath d='M12 2.5L3.5 7.2v5.8c0 5.3 3.6 10.2 8.5 11.5 4.9-1.3 8.5-6.2 8.5-11.5V7.2L12 2.5z' fill='%23151d2f' stroke='%23f97316' stroke-width='1.6'/%3E%3Cpath d='M8 11.5l4 5 4-5' stroke='%23ffffff' stroke-width='2.2'/%3E%3Ccircle cx='12' cy='7.8' r='1.6' fill='%23f97316' stroke='none'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="login-page-body">
+
+  <!-- Floating Top Controls for Standalone Login Page (No Header) -->
+  <div class="login-floating-controls">
+    <a href="index.html" class="btn btn-outline btn-sm" title="Back to Homepage">← Back to Site</a>
+    <button class="theme-toggle-btn" type="button" aria-label="Toggle color theme" title="Toggle theme"></button>
+    <button class="rtl-toggle-btn" id="rtlToggleBtn" type="button" aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+  </div>
+
+  <!-- ==================== CENTERED LOGIN CREDENTIALS SECTION ==================== -->
+  <main class="auth-centered-section">
+    <div class="auth-centered-wrapper">
+      <div class="auth-card">
+        <div style="text-align: center; margin-bottom: 1.75rem;">
+          <a href="index.html" class="brand-logo" title="Back to VeloceDrive Home" style="justify-content: center; margin-bottom: 1rem; text-decoration: none;">
+            <span class="brand-icon">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+                <path d="M8 11l4 6 4-6"></path>
+                <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="brand-logo-text">
+              <span>Veloce<span class="accent">Drive</span></span>
+              <span class="brand-logo-sub">Luxury Mobility</span>
+            </span>
+          </a>
+          <h1 style="font-size: 1.85rem; font-weight: 800; margin-bottom: 0.35rem;"><span class="text-gradient">Sign In</span></h1>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Enter your credentials below to access your account.</p>
+        </div>
+
+        
+
+        <!-- Inline Toast Feedback Box (Visible on Login Submit Without Redirecting) -->
+        <div id="loginInlineToast" style="display: none; margin-bottom: 1.25rem; padding: 0.95rem 1.15rem; border-radius: var(--radius-sm); background: rgba(16, 185, 129, 0.14); border: 1px solid rgba(16, 185, 129, 0.45); color: var(--text-primary); font-size: 0.9rem; font-weight: 600; align-items: center; gap: 0.65rem;">
+          <span style="color: var(--accent-emerald); font-size: 1.1rem; font-weight: 800;">✓</span>
+          <span id="loginInlineToastText">Login Successful! Welcome back (Dummy Login — Redirect Disabled).</span>
+        </div>
+
+        <!-- Panel 1: Login Credentials Alone -->
+        <div id="loginPanel" class="auth-panel">
+          <form id="subscriberLoginForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="loginEmail">Email Address or Member ID</label>
+              <input type="email" id="loginEmail" class="form-input" value="alex.morgan@velocedrive.io" required data-validate="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address (e.g. name@domain.com)" autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.45rem;">
+                <label class="form-label" for="loginPassword" style="margin-bottom: 0;">Password</label>
+                <a href="#loginPanel" onclick="showToast('Password reset link sent to your registered email.', 'info'); return false;" style="font-size: 0.8rem; color: var(--accent-primary);">Forgot Password?</a>
+              </div>
+              <input type="password" id="loginPassword" class="form-input" value="••••••••••••" required />
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.5rem; font-size: 0.875rem;">
+              <label style="display: inline-flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                <input type="checkbox" checked style="width: 16px; height: 16px; accent-color: var(--accent-primary);" />
+                <span>Keep me signed in for 30 days</span>
+              </label>
+              <span class="badge badge-emerald">2FA Protected</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="loginSubmitBtn">Sign In to Account</button>
+            <button type="button" id="instantDemoLoginBtn" class="btn btn-hero-glass btn-block" style="margin-top: 0.85rem;">⚡ Quick Demo Sign In (Alex Morgan)</button>
+          </form>
+        </div>
+
+        <!-- Panel 2: New Member Registration -->
+        <div id="registerPanel" class="auth-panel" style="display: none;">
+          <h2 style="font-size: 1.35rem; margin-bottom: 0.35rem;">Create Driver Account</h2>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Choose your preferred starting tier. Zero deposit charged until vehicle delivery.
+          </p>
+
+          <form id="subscriberRegisterForm" novalidate>
+            <div class="grid-2" style="gap: 0.75rem;">
+              <div class="form-group">
+                <label class="form-label" for="regFirstName">First Name *</label>
+                <input type="text" id="regFirstName" class="form-input" placeholder="Jordan" required data-validate="name" pattern="[A-Za-z\s]{2,30}" title="Letters alone should be entered" autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="regLastName">Last Name *</label>
+                <input type="text" id="regLastName" class="form-input" placeholder="Vance" required data-validate="name" pattern="[A-Za-z\s]{2,30}" title="Letters alone should be entered" autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="grid-2" style="gap: 0.75rem;">
+              <div class="form-group">
+                <label class="form-label" for="regEmail">Email Address *</label>
+                <input type="email" id="regEmail" class="form-input" placeholder="jordan@example.com" required data-validate="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address (e.g. name@domain.com)" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="regPhone">Mobile Phone (Numbers Only) *</label>
+                <input type="tel" id="regPhone" class="form-input" placeholder="9876543210" required data-validate="phone" pattern="[0-9]{10,15}" title="Numbers alone should be entered (at least 10 digits)" inputmode="numeric" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="grid-2" style="gap: 0.75rem;">
+              <div class="form-group">
+                <label class="form-label" for="regTier">Preferred Tier</label>
+                <select id="regTier" class="form-input">
+                  <option value="signature">Signature Reserve (₹98,900/mo)</option>
+                  <option value="essential">Essential Flex (₹64,900/mo)</option>
+                  <option value="apex">Apex Bespoke (₹1,39,900/mo)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="regZip">Delivery PIN Code</label>
+                <input type="text" id="regZip" class="form-input" placeholder="400001" required pattern="[0-9]{6}" title="Numbers alone should be entered (6-digit PIN)" inputmode="numeric" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="registerSubmitBtn">Register &amp; Verify Profile</button>
+          </form>
+        </div>
+
+        <!-- Panel 3: Corporate Fleet Login -->
+        <div id="corporatePanel" class="auth-panel" style="display: none;">
+          <h2 style="font-size: 1.35rem; margin-bottom: 0.35rem;">Corporate SSO Login</h2>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+            Manage company fleet vehicles, consolidated monthly invoices, and driver assignments.
+          </p>
+
+          <form id="corporateLoginForm" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="corpCode">Organization SSO Domain</label>
+              <input type="text" id="corpCode" class="form-input" value="acme-global.velocedrive.io" required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="corpEmail">Fleet Admin Email *</label>
+              <input type="email" id="corpEmail" class="form-input" value="fleet-admin@company.com" required data-validate="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address (e.g. name@domain.com)" autocomplete="email" />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" id="corporateSubmitBtn">Corporate Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

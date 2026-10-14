@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscription Pricing Plans — VeloceDrive Flexible Leasing</title>
+  <meta name="description" content="Transparent, all-inclusive car subscription pricing plans. Customize your monthly mileage allowance and commitment flexibility with ₹0 down payment." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='24' height='24' rx='5' fill='%230b0f19'/%3E%3Cpath d='M12 2.5L3.5 7.2v5.8c0 5.3 3.6 10.2 8.5 11.5 4.9-1.3 8.5-6.2 8.5-11.5V7.2L12 2.5z' fill='%23151d2f' stroke='%23f97316' stroke-width='1.6'/%3E%3Cpath d='M8 11.5l4 5 4-5' stroke='%23ffffff' stroke-width='2.2'/%3E%3Ccircle cx='12' cy='7.8' r='1.6' fill='%23f97316' stroke='none'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== STICKY & ALIGNED SITE HEADER ==================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+            <path d="M8 11l4 6 4-6"></path>
+            <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+          </svg>
+        </span>
+        <span class="brand-logo-text">
+          <span>Veloce<span class="accent">Drive</span></span>
+          <span class="brand-logo-sub">Luxury Mobility</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle nav-link" id="homeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu" id="homeDropdownMenu" aria-labelledby="homeDropdownBtn">
+            <a href="index.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 1</span>
+                <span class="dropdown-sub">Signature Showcase</span>
+              </div>
+            </a>
+            <a href="home2.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 2</span>
+                <span class="dropdown-sub">Executive Edition</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="fleet.html" class="nav-link">Vehicle Fleet</a>
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+        <a href="pricing.html" class="nav-link active">Pricing Plans</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="login.html" class="btn btn-primary btn-sm btn-block">Sign In / Login</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle color theme"></button>
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" type="button" aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CONSISTENT CENTER-ALIGNED HERO SECTION WITH RELEVANT BACKGROUND IMAGE ==================== -->
+  <section class="hero-section hero-pricing">
+    <div class="container hero-container">
+      <span class="hero-badge">
+        <span>● Transparent All-Inclusive Pricing</span>
+      </span>
+      <h1 class="hero-title">Flexible Subscription Plans <span class="text-gradient">With Zero Hidden Fees</span></h1>
+      <p class="hero-subtitle">
+        One flat monthly rate covers your vehicle, A-rated insurance policy, routine maintenance, tire wear, roadside assistance, and doorstep vehicle swaps. Customize your term and mileage below.
+      </p>
+      
+      <div class="hero-metrics">
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">₹0 Security</span>
+          <span class="hero-metric-label">For Verified Subscribers</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">Up to 18% Off</span>
+          <span class="hero-metric-label">Multi-Month Saver Terms</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">Rollover Miles</span>
+          <span class="hero-metric-label">Unused Miles Never Expire</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">+1 Free Driver</span>
+          <span class="hero-metric-label"> Domestic Partner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE PRICING CONFIGURATOR & TIER CARDS ==================== -->
+  <section id="pricingPlansGrid">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Customize Your Membership</span>
+        <h2 class="section-title">Choose Your Subscription Tier &amp; Mileage</h2>
+        <p class="section-desc">
+          Select month-to-month flexibility or save up to 18% with a 3, 6, or 12-month flexible leasing commitment.
+        </p>
+      </div>
+
+      <!-- Interactive Term & Mileage Configurator -->
+      <div class="pricing-config-bar">
+        <div>
+          <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-secondary); margin-bottom: 0.5rem;">
+            1. Select Commitment Flexibility
+          </div>
+          <div class="term-switcher">
+            <button type="button" class="term-btn active" data-multiplier="1.0" data-label="Monthly Flex (Cancel Anytime)">1-Mo Flex</button>
+            <button type="button" class="term-btn" data-multiplier="0.94" data-label="3-Month Saver (Save 6%)">3-Mo (-6%)</button>
+            <button type="button" class="term-btn" data-multiplier="0.88" data-label="6-Month Preferred (Save 12%)">6-Mo (-12%)</button>
+            <button type="button" class="term-btn" data-multiplier="0.82" data-label="12-Month Flex Lease (Save 18%)">12-Mo (-18%)</button>
+          </div>
+        </div>
+
+        <div>
+          <label for="pricingMileageSelect" style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-secondary); margin-bottom: 0.5rem;">
+            2. Monthly Mileage Allowance (With Rollover)
+          </label>
+          <select id="pricingMileageSelect" class="select-control" style="min-width: 280px;">
+            <option value="0">1,500 Miles / Month (Standard Included)</option>
+            <option value="9900">2,000 Miles / Month (+₹9,900/mo)</option>
+            <option value="18500">2,500 Miles / Month (+₹18,500/mo)</option>
+            <option value="29000">Unlimited Highway Miles Pack (+₹29,000/mo)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- 3-Column Pricing Tier Cards -->
+      <div class="grid-3">
+        <!-- Tier 1: Essential Flex -->
+        <div class="pricing-card">
+          <span class="badge badge-purple" style="align-self: flex-start; margin-bottom: 1rem;">Everyday Electric &amp; Touring</span>
+          <h3 class="pricing-tier-name">Essential Flex</h3>
+          <p class="pricing-tier-desc">
+            Ideal for urban commuters and drivers seeking modern EVs and luxury crossovers with zero long-term commitment.
+          </p>
+
+          <div class="pricing-price-box">
+            <div style="display: flex; align-items: baseline; gap: 0.35rem;">
+              <span class="pricing-price-val" id="priceEssential">₹64,900</span>
+              <span style="color: var(--text-secondary); font-weight: 600;">/ month</span>
+            </div>
+            <div class="pricing-term-caption" style="font-size: 0.82rem; color: var(--accent-emerald); margin-top: 0.4rem; font-weight: 600;">
+              Monthly Flex (Cancel Anytime)
+            </div>
+          </div>
+
+          <ul class="pricing-feature-list">
+            <li><span class="comp-check">✓</span> <span><strong>Access to 35+ Models:</strong> Tesla Model 3 Perf, Polestar 3, Volvo EX40, BMW 330e, Audi Q4 e-tron</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>1 Free Vehicle Swap</strong> per quarter</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Comprehensive Insurance</strong> (₹40,000 deductible)</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>1,500 Monthly Miles</strong> + rollover bank</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Scheduled Maintenance &amp; Tires</strong> 100% covered</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>24/7 Roadside &amp; Mobile Charging</strong> dispatch</span></li>
+          </ul>
+
+          <a href="login.html" class="btn btn-outline btn-block">Start Essential Plan</a>
+        </div>
+
+        <!-- Tier 2: Signature Reserve (Most Popular) -->
+        <div class="pricing-card popular">
+          <div class="popular-ribbon">
+            <span class="badge badge-blue">Most Popular</span>
+          </div>
+          <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 1rem;">Executive Sedans &amp; SUVs</span>
+          <h3 class="pricing-tier-name">Signature Reserve</h3>
+          <p class="pricing-tier-desc">
+            Our flagship subscription tier combining executive sedans, luxury SUVs, and sport coupes with 2 doorstep swaps per month.
+          </p>
+
+          <div class="pricing-price-box">
+            <div style="display: flex; align-items: baseline; gap: 0.35rem;">
+              <span class="pricing-price-val text-gradient" id="priceSignature">₹98,900</span>
+              <span style="color: var(--text-secondary); font-weight: 600;">/ month</span>
+            </div>
+            <div class="pricing-term-caption" style="font-size: 0.82rem; color: var(--accent-emerald); margin-top: 0.4rem; font-weight: 600;">
+              Monthly Flex (Cancel Anytime)
+            </div>
+          </div>
+
+          <ul class="pricing-feature-list">
+            <li><span class="comp-check">✓</span> <span><strong>Access to 85+ Models:</strong> BMW i5 M60, Mercedes-AMG CLE 53, Genesis GV80, Porsche Macan EV</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>2 Free Doorstep Swaps</strong> every month</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Upgraded Insurance</strong> (₹20,000 low deductible)</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Spouse / Secondary Driver</strong> included free</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Airport Valet Drop-Off</strong> at 18 major hubs</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Pause Subscription</strong> up to 60 days/year</span></li>
+          </ul>
+
+          <a href="login.html" class="btn btn-primary btn-block">Start Signature Reserve →</a>
+        </div>
+
+        <!-- Tier 3: Apex Bespoke -->
+        <div class="pricing-card">
+          <span class="badge badge-amber" style="align-self: flex-start; margin-bottom: 1rem;">Flagship Performance &amp; Exotics</span>
+          <h3 class="pricing-tier-name">Apex Bespoke</h3>
+          <p class="pricing-tier-desc">
+            Unrestricted access to our entire collection including Porsche 911 GTS, Taycan 4S, Audi RS6 Avant, and Rivian R1S Tri-Motor.
+          </p>
+
+          <div class="pricing-price-box">
+            <div style="display: flex; align-items: baseline; gap: 0.35rem;">
+              <span class="pricing-price-val" id="priceApex">₹1,39,900</span>
+              <span style="color: var(--text-secondary); font-weight: 600;">/ month</span>
+            </div>
+            <div class="pricing-term-caption" style="font-size: 0.82rem; color: var(--accent-emerald); margin-top: 0.4rem; font-weight: 600;">
+              Monthly Flex (Cancel Anytime)
+            </div>
+          </div>
+
+          <ul class="pricing-feature-list">
+            <li><span class="comp-check">✓</span> <span><strong>Full 120+ Fleet Access:</strong> Porsche 911, Taycan 4S, Audi RS6 Avant, Rivian R1S Ascend, AMG GT</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>4 White-Glove Swaps</strong> per month included</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Zero-Deductible (₹0)</strong> Premier Insurance Shield</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Complimentary EV Fast-Charging</strong> network pass</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Dedicated 24/7 Personal Fleet</strong> Concierge</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Multi-City Access:</strong> Drive across all metro hubs</span></li>
+          </ul>
+
+          <a href="login.html" class="btn btn-outline btn-block">Apply for Apex Bespoke</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BUNDLED VALUE BREAKDOWN (HALF IMAGE / HALF CONTENT) ==================== -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">₹56,000/Mo In Extra Value Included</span>
+        <h2 class="section-title">What Your Single Monthly Rate Replaces</h2>
+        <p class="section-desc">
+          When you finance or lease a car traditionally, your monthly EMI is only the beginning. VeloceDrive absorbs every secondary automotive expense.
+        </p>
+      </div>
+
+      <div class="grid-4">
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" alt="Full Coverage Insurance" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <span class="badge badge-emerald" style="align-self: flex-start; margin-bottom: 0.65rem;">₹0 Deductible Option</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.45rem;">Full Coverage Insurance</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              Primary collision, comprehensive glass, and ₹2.5 Cr liability insurance active the moment your car is delivered.
+            </p>
+          </div>
+        </div>
+
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=800&q=80" alt="Service, Brakes and Tires" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.65rem;">100% OEM Covered</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.45rem;">Service, Brakes &amp; Tires</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              All scheduled OEM maintenance, performance tire wear, alignment, and mobile service visits are 100% covered.
+            </p>
+          </div>
+        </div>
+
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80" alt="RTO Tags and Road Taxes" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <span class="badge badge-amber" style="align-self: flex-start; margin-bottom: 0.65rem;">Pre-Paid RTO</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.45rem;">RTO Tags &amp; Road Taxes</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+             Zero annual registration renewals, PUC inspections, or state road tax bills in your mailbox ever again.saving valuable time.
+          </div>
+        </div>
+
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=800&q=80" alt="Doorstep Swap Valet" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <span class="badge badge-purple" style="align-self: flex-start; margin-bottom: 0.65rem;">White-Glove Valet</span>
+            <h3 style="font-size: 1.15rem; margin-bottom: 0.45rem;">Doorstep Swap Valet</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary);">
+              Our uniformed concierge specialists deliver your next car to your home or office and retrieve your current vehicle.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DETAILED PLAN COMPARISON TABLE ==================== -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Full Plan Breakdown</span>
+        <h2 class="section-title">Compare Plan Coverage Side-by-Side</h2>
+        <p class="section-desc">
+          Every tier includes registration, taxes, maintenance, and insurance—choose the vehicle access level and swap frequency that fits your lifestyle.
+        </p>
+      </div>
+
+      <div class="comparison-table-card">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Subscription Feature</th>
+              <th>Essential Flex</th>
+              <th class="highlight-col">Signature Reserve</th>
+              <th>Apex Bespoke</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Available Vehicle Fleet Size</strong></td>
+              <td>35+ Curated Models</td>
+              <td class="highlight-col">85+ Luxury &amp; Sport Models</td>
+              <td>All 120+ Models + Flagships</td>
+            </tr>
+            <tr>
+              <td><strong>Included Doorstep Vehicle Swaps</strong></td>
+              <td>1 Swap / Quarter</td>
+              <td class="highlight-col">2 Swaps / Month</td>
+              <td>4 Swaps / Month</td>
+            </tr>
+            <tr>
+              <td><strong>Insurance Collision Deductible</strong></td>
+              <td>₹40,000 Deductible</td>
+              <td class="highlight-col">₹20,000 Deductible</td>
+              <td>₹0 Zero Deductible Shield</td>
+            </tr>
+            <tr>
+              <td><strong>Monthly Mileage Rollover</strong></td>
+              <td>Up to 3,000 Banked Miles</td>
+              <td class="highlight-col">Up to 6,000 Banked Miles</td>
+              <td>Unlimited Rollover Bank</td>
+            </tr>
+            <tr>
+              <td><strong>Additional Household Drivers</strong></td>
+              <td>+₹3,800/mo per driver</td>
+              <td class="highlight-col">1 Additional Driver Free</td>
+              <td>Up to 3 Drivers Included</td>
+            </tr>
+            <tr>
+              <td><strong>EV Public Charging Network Pass</strong></td>
+              <td>Discounted Member Rate</td>
+              <td class="highlight-col">250 kWh / Month Included</td>
+              <td>Unlimited High-Speed Charging</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CORPORATE & BUSINESS FLEET LEASING ==================== -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="content-image-split">
+        <div class="split-content">
+          <span class="badge badge-amber" style="margin-bottom: 0.85rem; align-self: flex-start;">VeloceDrive for Business</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 0.75rem; color: var(--text-primary); line-height: 1.25;">Flexible Corporate &amp; Executive Fleet Leasing</h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.25rem; line-height: 1.6;">
+            Equip relocating executives, visiting partners, and regional sales teams with all-inclusive luxury vehicles—without tying up corporate balance sheets in 36-month commercial leases.
+          </p>
+          <ul class="pricing-feature-list" style="margin-bottom: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+            <li><span class="comp-check">✓</span> <span><strong>Consolidated Monthly GST Invoice</strong> across 3 to 50+ vehicles</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>Instant Driver Reassignment</strong> when employees rotate projects</span></li>
+            <li><span class="comp-check">✓</span> <span><strong>100% Commercial Liability &amp; Fleet Telemetry</strong> included</span></li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="margin-top: 1.5rem; align-self: flex-start; display: inline-flex;">Inquire Corporate Fleet →</a>
+        </div>
+        <div class="split-media">
+          <img src="https://images.unsplash.com/photo-1616455579100-2ceaa4eb2d37?auto=format&fit=crop&w=1000&h=650&q=85" alt="Corporate Executive Fleet Leasing" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+                <path d="M8 11l4 6 4-6"></path>
+                <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="brand-logo-text">
+              <span>Veloce<span class="accent">Drive</span></span>
+              <span class="brand-logo-sub">Luxury Mobility</span>
+            </span>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; max-width: 340px; margin-bottom: 1.25rem;">
+            Modern car subscription and flexible leasing service. Drive electric, luxury, and performance vehicles month-to-month with insurance, maintenance, and concierge swaps included.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on X" title="Follow on X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Instagram" title="Follow on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Connect with VeloceDrive on LinkedIn" title="Connect on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Facebook" title="Follow on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Mobility Platform</h4>
+          <div class="footer-links">
+            <a href="fleet.html">Browse Fleet by Category</a>
+            <a href="pricing.html">Subscription Pricing Tiers</a>
+            <a href="services.html">Concierge Fleet Services</a>
+            <a href="dashboard.html">Subscriber Command Center</a>
+            
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Vehicle Categories</h4>
+          <div class="footer-links">
+            <a href="fleet.html">Electric &amp; Hybrid Flagships</a>
+            <a href="fleet.html">Executive Luxury Sedans</a>
+            <a href="fleet.html">Performance &amp; 7-Seat SUVs</a>
+            <a href="pricing.html">Corporate Fleet Leasing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">24/7 Subscriber Support</h4>
+          <div class="footer-links">
+            <a href="contact.html">Book Doorstep Concierge</a>
+            <a href="contact.html">1-800-VELOCE-DRIVE</a>
+            <a href="contact.html">concierge@velocedrive.io</a>
+            <a href="dashboard.html">Manage Billing &amp; Mileage</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 VeloceDrive Mobility Inc. All rights reserved. Equal Housing &amp; Mobility Opportunity.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How It Works — VeloceDrive Luxury Car Subscription</title>
+  <meta name="description" content="Discover how VeloceDrive works: select your luxury vehicle, complete instant 2-minute digital verification, get doorstep delivery within 4 hours, and swap or cancel anytime with all-inclusive insurance and maintenance." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='24' height='24' rx='5' fill='%230b0f19'/%3E%3Cpath d='M12 2.5L3.5 7.2v5.8c0 5.3 3.6 10.2 8.5 11.5 4.9-1.3 8.5-6.2 8.5-11.5V7.2L12 2.5z' fill='%23151d2f' stroke='%23f97316' stroke-width='1.6'/%3E%3Cpath d='M8 11.5l4 5 4-5' stroke='%23ffffff' stroke-width='2.2'/%3E%3Ccircle cx='12' cy='7.8' r='1.6' fill='%23f97316' stroke='none'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    .hero-how-it-works {
+      background: radial-gradient(circle at 50% 30%, rgba(249, 115, 22, 0.15) 0%, rgba(11, 15, 25, 0.94) 75%),
+                  url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    }
+    .process-step-num {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--gradient-brand);
+      color: #ffffff;
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 16px rgba(249, 115, 22, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== ALWAYS-STICKY FIXED SITE HEADER ==================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" title="VeloceDrive Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+            <path d="M8 11l4 6 4-6"></path>
+            <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+          </svg>
+        </span>
+        <span class="brand-logo-text">
+          <span>Veloce<span class="accent">Drive</span></span>
+          <span class="brand-logo-sub">Luxury Mobility</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle nav-link" id="homeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu" id="homeDropdownMenu" aria-labelledby="homeDropdownBtn">
+            <a href="index.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 1</span>
+                <span class="dropdown-sub">Signature Showcase</span>
+              </div>
+            </a>
+            <a href="home2.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 2</span>
+                <span class="dropdown-sub">Executive Edition</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="fleet.html" class="nav-link">Vehicle Fleet</a>
+        <a href="how-it-works.html" class="nav-link active">How It Works</a>
+        <a href="pricing.html" class="nav-link">Pricing Plans</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="login.html" class="btn btn-primary btn-sm btn-block">Sign In / Login</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle color theme"></button>
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" type="button" aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION: HOW IT WORKS ==================== -->
+  <section class="hero-section hero-how-it-works">
+    <div class="container hero-container">
+      <span class="hero-badge">
+        <span>● The Intelligent Alternative to Buying &amp; 3-Year Leases</span>
+      </span>
+      <h1 class="hero-title">How VeloceDrive Works: <span class="text-gradient">Freedom Over Financing</span></h1>
+      <p class="hero-subtitle">
+        Eliminate down payments, depreciation, maintenance headaches, and long-term bank loans. Subscribe online in 2 minutes and have a pristine luxury or electric vehicle delivered directly to your doorstep.
+      </p>
+      <div class="hero-actions">
+        <a href="fleet.html" class="btn btn-primary btn-lg">Explore Available Vehicles</a>
+        <a href="pricing.html" class="btn btn-hero-glass btn-lg">View Subscription Plans</a>
+      </div>
+
+      <div class="hero-metrics">
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">4 Hours</span>
+          <span class="hero-metric-label">Average Doorstep Delivery</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">₹0 Down</span>
+          <span class="hero-metric-label">Down Payment Required</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">120 Sec</span>
+          <span class="hero-metric-label">Digital KYC Verification</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">18 Hubs</span>
+          <span class="hero-metric-label">Metro Hubs Operational</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 1: THE 4-STEP ONBOARDING JOURNEY ==================== -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Seamless 4-Step Process</span>
+        <h2 class="section-title">From Selection to Ignition in Under 4 Hours</h2>
+        <p class="section-desc">
+          Experience frictionless automotive access designed for executive schedules and modern lifestyles.
+        </p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Step 1 -->
+        <article class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=800&q=80" alt="Curate and Select Vehicle" />
+          </div>
+          <div class="card-body-half">
+            <span class="badge badge-amber" style="align-self: flex-start; margin-bottom: 0.5rem;">Step 01</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.4rem;">Select Your Vehicle &amp; Tier</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+              Browse our curated showroom of 40+ premier electric flagships, executive sedans, and high-performance SUVs. Filter by monthly kilometers, charging speeds, or bespoke features.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 1.25rem; border-top: 1px solid var(--border-color); flex-wrap: wrap; gap: 0.75rem;">
+              <span style="font-size: 0.85rem; color: var(--accent-primary); font-weight: 700;">40+ Luxury Models</span>
+              <a href="fleet.html" class="btn btn-primary btn-sm">Browse Available Fleet →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 2 -->
+        <article class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1508974239320-0a029497e820?auto=format&fit=crop&w=800&q=80" alt="Instant 2-Minute Digital KYC" />
+          </div>
+          <div class="card-body-half">
+            <span class="badge badge-blue" style="align-self: flex-start; margin-bottom: 0.5rem;">Step 02</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.4rem;">Instant 2-Minute Digital KYC</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+              Complete our paperless digital identity check. Simply upload your valid Indian Driving License and identity credentials. Approvals are automated in under 120 seconds with zero credit inquiries.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 1.25rem; border-top: 1px solid var(--border-color); flex-wrap: wrap; gap: 0.75rem;">
+              <span style="font-size: 0.85rem; color: var(--accent-emerald); font-weight: 700;">Zero Paperwork Required</span>
+              <a href="pricing.html" class="btn btn-primary btn-sm">Select Your Plan →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 3 -->
+        <article class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&w=800&q=80" alt="White-Glove Doorstep Delivery" />
+          </div>
+          <div class="card-body-half">
+            <span class="badge badge-amber" style="align-self: flex-start; margin-bottom: 0.5rem;">Step 03</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.4rem;">White-Glove Doorstep Handover</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+              Your dedicated mobility specialist delivers the vehicle detailed, sanitized, and charged to 90% or fully fueled. We pair your smartphone digital key and configure your seat and mirrors on the spot.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 1.25rem; border-top: 1px solid var(--border-color); flex-wrap: wrap; gap: 0.75rem;">
+              <span style="font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">18 Regional Metro Hubs</span>
+              <a href="contact.html" class="btn btn-primary btn-sm">Book Doorstep Delivery →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Step 4 -->
+        <article class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80" alt="Drive, Swap, or Cancel Anytime" />
+          </div>
+          <div class="card-body-half">
+            <span class="badge badge-purple" style="align-self: flex-start; margin-bottom: 0.5rem;">Step 04</span>
+            <h3 style="font-size: 1.35rem; margin-bottom: 0.4rem;">Drive, Swap, or Cancel Month-to-Month</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+              Enjoy total freedom. Commute in an electric executive sedan this month, swap into a rugged 7-seat SUV for family vacation next month, or pause your subscription when traveling abroad.
+            </p>
+            <div style="margin-top: auto; display: flex; justify-content: space-between; align-items: center; padding-top: 1.25rem; border-top: 1px solid var(--border-color); flex-wrap: wrap; gap: 0.75rem;">
+              <span style="font-size: 0.85rem; color: var(--accent-primary); font-weight: 700;">Month-to-Month Freedom</span>
+              <a href="dashboard.html" class="btn btn-primary btn-sm">Access Subscriber Portal →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 2: EVERYTHING INCLUDED IN ONE PAYMENT ==================== -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">All-Inclusive Coverage</span>
+        <h2 class="section-title">Zero Hidden Fees. One Transparent Invoice.</h2>
+        <p class="section-desc">
+          Every VeloceDrive subscription unifies all vehicle ownership costs into a single predictable monthly payment in Indian Rupees.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Benefit Card 1 -->
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1563720360172-67b8f3dce741?auto=format&fit=crop&w=800&q=80" alt="Luxury vehicle showroom delivery inspection with comprehensive warranty coverage" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <h3>₹0 Deduct Comprehensive Insurance</h3>
+            <p>
+              Zero-depreciation bumper-to-bumper insurance including own damage, third-party liability, collision, natural calamities, and glass cover with zero out-of-pocket deductibles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit Card 2 -->
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=800&q=80" alt="Certified master automotive technician inspecting performance brakes and chassis" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <h3>Scheduled Service &amp; Wear-and-Tear</h3>
+            <p>
+              All manufacturer-certified maintenance, brake pad replacements, synthetic lubricants, windshield wipers, and premium Pirelli/Michelin tire wear are 100% covered.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit Card 3 -->
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?auto=format&fit=crop&w=800&q=80" alt="Emergency high-speed electric vehicle roadside charging and dispatch service" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <h3>24/7 Roadside Care &amp; EV Dispatch</h3>
+            <p>
+              Emergency mobile battery boost, rapid tire assistance, nationwide flatbed recovery, and immediate replacement vehicle delivery guaranteed within 90 minutes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit Card 4 -->
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Subscriber configuring digital smartphone car key and vehicle telemetry" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <h3>Smartphone Key &amp; Telemetry</h3>
+            <p>
+              Unlock, start, and pre-heat or pre-cool your vehicle directly from your smartphone. Share guest driver digital access with family members or chauffeurs in seconds.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit Card 5 -->
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=800&q=80" alt="Executive grand tourer driving along scenic open coastal highway" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <h3>Rollover Mileage Bank</h3>
+            <p>
+              Didn't use all your monthly kilometers? Unused miles automatically roll over to your private mileage bank and never expire as long as your subscription remains active.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit Card 6 -->
+        <div class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?auto=format&fit=crop&w=800&q=80" alt="Sleek performance sports coupe ready for seasonal vehicle swap" loading="lazy" />
+          </div>
+          <div class="card-body-half">
+            <h3>Monthly Vehicle Swaps</h3>
+            <p>
+              Switch effortlessly between performance sports coupes, executive electric saloons, EV Charge station and 7-passenger luxury SUVs with zero penalty fees or new down payments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3: SUBSCRIPTION VS BUYING VS LEASING ==================== -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Direct Financial Comparison</span>
+        <h2 class="section-title">Why Executives Choose Subscription Over Ownership</h2>
+        <p class="section-desc">
+          Compare the financial clarity of VeloceDrive against traditional 5-year bank auto loans and rigid 36-month dealership leasing.
+        </p>
+      </div>
+
+      <div class="data-table-card" style="margin-bottom: 0;">
+        <div class="telemetry-table-wrapper">
+          <table class="telemetry-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Comparison Criteria</th>
+                <th style="width: 25%; color: var(--accent-primary);">VeloceDrive Subscription</th>
+                <th style="width: 25%;">Buying With Bank Loan</th>
+                <th style="width: 25%;">Traditional 36-Month Lease</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Upfront Capital Required</strong></td>
+                <td><span class="badge badge-emerald">₹0 Down Payment</span></td>
+                <td>₹15,00,000 to ₹35,00,000 down</td>
+                <td>₹6,00,000 to ₹12,00,000 down</td>
+              </tr>
+              <tr>
+                <td><strong>Comprehensive Insurance</strong></td>
+                <td><span class="badge badge-emerald">Included (₹0 Deductible)</span></td>
+                <td>₹95,000 to ₹2,50,000 / year extra</td>
+                <td>Must purchase privately</td>
+              </tr>
+              <tr>
+                <td><strong>Maintenance &amp; Wear/Tear</strong></td>
+                <td><span class="badge badge-emerald">100% Included</span></td>
+                <td>Out-of-pocket dealer service bills</td>
+                <td>Scheduled basic only; tires excluded</td>
+              </tr>
+              <tr>
+                <td><strong>Vehicle Swaps</strong></td>
+                <td><span class="badge badge-emerald">Included Every Month</span></td>
+                <td>Impossible without selling vehicle</td>
+                <td>Hefty early termination penalties</td>
+              </tr>
+              <tr>
+                <td><strong>Depreciation Risk</strong></td>
+                <td><span class="badge badge-emerald">Zero Risk</span></td>
+                <td>Lose 40%–50% value in 36 months</td>
+                <td>Residual gap fees at lease return</td>
+              </tr>
+              <tr>
+                <td><strong>Commitment Term</strong></td>
+                <td><span class="badge badge-emerald">Month-to-Month Flexible</span></td>
+                <td>5 to 7 year fixed bank EMI debt</td>
+                <td>Rigid 36-month non-cancelable lease</td>
+              </tr>
+              <tr>
+                <td><strong>Tax Deduction (Business)</strong></td>
+                <td><span class="badge badge-emerald">100% Tax Deductible OPEX</span></td>
+                <td>Complex depreciation asset tracking</td>
+                <td>Partial deduction only</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4: DIGITAL KEY & SMART APP TECH ==================== -->
+  <section>
+    <div class="container">
+      <div class="content-image-split" style="background: transparent; border: none; padding: 0; gap: 3.5rem;">
+        <div class="split-content">
+          <span class="section-tag">Next-Gen Connected Vehicle Tech</span>
+          <h2 class="section-title" style="margin-bottom: 1.25rem;">Your Smartphone Is Your Master Car Key</h2>
+          
+          <ul style="display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 0;">
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <span style="color: var(--accent-primary); font-weight: 800;">✓</span>
+              <span><strong>Proximity Keyless Entry:</strong> Vehicle unlocks automatically as you approach and locks as you walk away.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <span style="color: var(--accent-primary); font-weight: 800;">✓</span>
+              <span><strong>Remote Cabin Pre-Conditioning:</strong> Set interior temperature to 21°C before stepping outside.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <span style="color: var(--accent-primary); font-weight: 800;">✓</span>
+              <span><strong>Real-Time Telemetry:</strong> Monitor live battery state-of-charge, tire pressure, and monthly mileage balance in real-time.</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <span style="color: var(--accent-primary); font-weight: 800;">✓</span>
+              <span><strong>One-Tap Swaps:</strong> Browse the active fleet and schedule your next vehicle swap directly from your smartphone.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="split-media" style="border-radius: var(--radius-md); box-shadow: var(--shadow-lg); border: 1px solid var(--border-color);">
+          <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80" alt="VeloceDrive Digital Cockpit" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5: ELIGIBILITY & ONBOARDING REQUIREMENTS ==================== -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quick Driver Eligibility</span>
+        <h2 class="section-title">Simple Driver Requirements</h2>
+        <p class="section-desc">
+          To maintain an exceptional community of verified drivers, our automated onboarding checks only the essentials.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div class="process-step-num" style="margin: 0 auto 1.25rem;">1</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Valid Driving License</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            A valid Indian driver's license with at least 1 year of active driving experience, or an International Driving Permit for expatriates.
+          </p>
+        </div>
+
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div class="process-step-num" style="margin: 0 auto 1.25rem;">2</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Minimum Age of 21</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            Subscribers must be at least 21 years old for Essential and Signature tiers (25 years for Apex Bespoke performance supercars).
+          </p>
+        </div>
+
+        <div class="card" style="padding: 2rem; text-align: center;">
+          <div class="process-step-num" style="margin: 0 auto 1.25rem;">3</div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Digital AutoPay</h3>
+          <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;">
+            A valid Indian credit card, debit card, or corporate UPI mandate for hassle-free monthly automated billing in Indian Rupees.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6: FREQUENTLY ASKED QUESTIONS ==================== -->
+  <section>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Subscriber FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">
+          Common questions about our vehicle delivery, swaps, insurance coverage, and flexible billing.
+        </p>
+      </div>
+
+      <div class="faq-accordion-wrapper" style="max-width: 820px; margin: 0 auto;">
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>How fast can I get a car delivered after signing up?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Once your digital KYC is approved (which takes under 2 minutes), you can schedule delivery immediately. In our primary metro areas (Mumbai, Bengaluru, Delhi NCR, and Hyderabad), our concierge delivers in under 4 hours.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>How do vehicle swaps work between different categories?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              You can initiate a swap directly from your Subscriber Dashboard at any time. Simply choose your new model and select your delivery time and location. Our specialist drops off the new car and retrieves the previous one simultaneously at your doorstep.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>Are maintenance and tire wear really 100% free?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. All scheduled servicing, brake pads, fluids, filters, and standard tire wear are fully bundled into your monthly subscription fee. When routine maintenance is due, we pick up your car and provide a temporary swap so your mobility is never interrupted.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>What happens if I want to cancel my subscription?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              You can cancel or pause your subscription at the end of any 30-day billing cycle with just 7 days notice directly from your online dashboard. There are no early exit penalties or cancellation fees.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            <span>What happens if I get into an accident or need roadside help?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              All VeloceDrive vehicles come with ₹0-deductible bumper-to-bumper insurance and 24/7 dedicated concierge roadside dispatch. In the event of an incident, tap Emergency Concierge in your dashboard or call our toll-free line. We dispatch roadside recovery and deliver a replacement vehicle to your location immediately.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ==================== CONSISTENT STICKY FOOTER (NO LOGIN LINK, CENTERED COPYRIGHT) ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;" title="VeloceDrive Home">
+          <span class="brand-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+              <path d="M8 11l4 6 4-6"></path>
+              <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+            </svg>
+          </span>
+          <span class="brand-logo-text">
+            <span>Veloce<span class="accent">Drive</span></span>
+            <span class="brand-logo-sub">Luxury Mobility</span>
+          </span>
+        </a>
+        <p style="color: var(--text-secondary); font-size: 0.9rem; max-width: 340px; margin-bottom: 1.25rem;">
+          Modern car subscription and flexible leasing service. Drive electric, luxury, and performance vehicles month-to-month with insurance, maintenance, and concierge swaps included.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on X" title="Follow on X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Instagram" title="Follow on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Connect with VeloceDrive on LinkedIn" title="Connect on LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Facebook" title="Follow on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Mobility Platform</h4>
+        <div class="footer-links">
+          <a href="fleet.html">Browse Fleet by Category</a>
+          <a href="pricing.html">Subscription Pricing Tiers</a>
+          <a href="services.html">Concierge Fleet Services</a>
+          <a href="dashboard.html">Subscriber Command Center</a>
+          
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Vehicle Categories</h4>
+        <div class="footer-links">
+          <a href="fleet.html">Electric &amp; Hybrid Flagships</a>
+          <a href="fleet.html">Executive Luxury Sedans</a>
+          <a href="fleet.html">Performance &amp; 7-Seat SUVs</a>
+          <a href="pricing.html">Corporate Fleet Leasing</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">24/7 Subscriber Support</h4>
+        <div class="footer-links">
+          <a href="contact.html">Book Doorstep Concierge</a>
+          <a href="contact.html">1-800-VELOCE-DRIVE</a>
+          <a href="contact.html">concierge@velocedrive.io</a>
+          <a href="dashboard.html">Manage Billing &amp; Mileage</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Centered copyright row across all viewports -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 VeloceDrive Mobility Technologies Private Limited. All Rights Reserved. Luxury Car Subscription &amp; Flexible Fleet Leasing.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

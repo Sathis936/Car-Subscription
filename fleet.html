@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicle Fleet by Category — VeloceDrive Car Subscription</title>
+  <meta name="description" content="Browse VeloceDrive's all-inclusive car subscription fleet by vehicle type: Electric & Hybrid, Luxury Sedans, Performance SUVs, and Executive Coupes." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='24' height='24' rx='5' fill='%230b0f19'/%3E%3Cpath d='M12 2.5L3.5 7.2v5.8c0 5.3 3.6 10.2 8.5 11.5 4.9-1.3 8.5-6.2 8.5-11.5V7.2L12 2.5z' fill='%23151d2f' stroke='%23f97316' stroke-width='1.6'/%3E%3Cpath d='M8 11.5l4 5 4-5' stroke='%23ffffff' stroke-width='2.2'/%3E%3Ccircle cx='12' cy='7.8' r='1.6' fill='%23f97316' stroke='none'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== STICKY & ALIGNED SITE HEADER ==================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+            <path d="M8 11l4 6 4-6"></path>
+            <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+          </svg>
+        </span>
+        <span class="brand-logo-text">
+          <span>Veloce<span class="accent">Drive</span></span>
+          <span class="brand-logo-sub">Luxury Mobility</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle nav-link" id="homeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu" id="homeDropdownMenu" aria-labelledby="homeDropdownBtn">
+            <a href="index.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 1</span>
+                <span class="dropdown-sub">Signature Showcase</span>
+              </div>
+            </a>
+            <a href="home2.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 2</span>
+                <span class="dropdown-sub">Executive Edition</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="fleet.html" class="nav-link active">Vehicle Fleet</a>
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+        <a href="pricing.html" class="nav-link">Pricing Plans</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="login.html" class="btn btn-primary btn-sm btn-block">Sign In / Login</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle color theme"></button>
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" type="button" aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CONSISTENT CENTER-ALIGNED HERO SECTION ==================== -->
+  <section class="hero-section hero-fleet">
+    <div class="container hero-container">
+      <span class="hero-badge">
+        <span>● Curated 2026 Model-Year Fleet Catalog</span>
+      </span>
+      <h1 class="hero-title">Explore Our Fleet <span class="text-gradient">By Vehicle Category</span></h1>
+      <p class="hero-subtitle">
+        Every vehicle in our lineup includes comprehensive auto insurance, scheduled factory maintenance, roadside assistance, and doorstep swap privileges. Filter by vehicle class or subscription tier below.
+      </p>
+      <div class="hero-actions">
+        <a href="#fleetCatalogSection" class="btn btn-primary btn-lg">Filter Available Vehicles</a>
+        <a href="dashboard.html" class="btn btn-hero-glass btn-lg">Schedule a Vehicle Swap</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">4 Categories</span>
+          <span class="hero-metric-label">EVs, Sedans, SUVs &amp; Coupes</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">&lt; 10k Miles</span>
+          <span class="hero-metric-label">Certified Current-Year Fleet</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">150-Pt Check</span>
+          <span class="hero-metric-label">Detailed Before Every Delivery</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">Instant Swap</span>
+          <span class="hero-metric-label">Switch Categories Anytime</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VEHICLE CATEGORY SPOTLIGHT (HALF IMAGE / HALF CONTENT CARDS) ==================== -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">4 Curated Vehicle Classes</span>
+        <h2 class="section-title">Engineered for Every Driving Requirement</h2>
+        <p class="section-desc">
+          Our subscribers aren't locked into a single body style. Explore our four core vehicle classes and swap seamlessly as your schedule changes.
+        </p>
+      </div>
+
+      <div class="grid-4">
+        <article class="half-media-card">
+          <div class="card-img-half" style="height: 185px;">
+            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80" alt="Electric and Hybrid Vehicles" />
+          </div>
+          <div class="card-body-half">
+            <h3 style="font-size: 1.15rem;">Electric &amp; Hybrid</h3>
+            <p style="font-size: 0.88rem;">
+              800V ultra-fast charging EVs and plug-in hybrids with 300+ mile range and complimentary charging network access.
+            </p>
+          </div>
+        </article>
+
+        <article class="half-media-card">
+          <div class="card-img-half" style="height: 185px;">
+            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" alt="Luxury Sedans" />
+          </div>
+          <div class="card-body-half">
+            <h3 style="font-size: 1.15rem;">Luxury Sedans</h3>
+            <p style="font-size: 0.88rem;">
+              Executive sport saloons featuring acoustic glass cabins, massage seating, and Level 2+ hands-free highway pilot.
+            </p>
+          </div>
+        </article>
+
+        <article class="half-media-card">
+          <div class="card-img-half" style="height: 185px;">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Performance SUVs" />
+          </div>
+          <div class="card-body-half">
+            <h3 style="font-size: 1.15rem;">Performance SUVs</h3>
+            <p style="font-size: 0.88rem;">
+              All-wheel-drive 5 and 7-passenger luxury SUVs and super-wagons built for family road trips and alpine terrain.
+            </p>
+          </div>
+        </article>
+
+        <article class="half-media-card">
+          <div class="card-img-half" style="height: 185px;">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=800&q=80" alt="Executive Coupes" />
+          </div>
+          <div class="card-body-half">
+            <h3 style="font-size: 1.15rem;">Executive Coupes</h3>
+            <p style="font-size: 0.88rem;">
+              Iconic 2+2 grand tourers and twin-turbo  coupes delivering sub-3.5-second acceleration and pure canyon poise.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE FLEET CATALOG BY VEHICLE TYPE ==================== -->
+  <section id="fleetCatalogSection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Live Inventory Browser</span>
+        <h2 class="section-title">Select Your Next Ride by Vehicle Type</h2>
+        <p class="section-desc">
+          Switch effortlessly between electric commuters, executive sedans, three-row adventure SUVs, and weekend sports coupes.
+        </p>
+      </div>
+
+      <!-- Filter & Sort Toolbar -->
+      <div class="filter-toolbar">
+        <div class="filter-pills">
+          <button type="button" class="filter-pill fleet-filter-pill active" data-category="all">All Vehicle Types (10)</button>
+          <button type="button" class="filter-pill fleet-filter-pill" data-category="Electric & Hybrid">Electric &amp; Hybrid</button>
+          <button type="button" class="filter-pill fleet-filter-pill" data-category="Luxury Sedans">Luxury Sedans</button>
+          <button type="button" class="filter-pill fleet-filter-pill" data-category="Performance SUVs">Performance SUVs</button>
+          <button type="button" class="filter-pill fleet-filter-pill" data-category="Executive Coupes">Executive Coupes</button>
+        </div>
+
+        <div class="filter-controls">
+          <input type="search" id="fleetSearchInput" class="input-control" placeholder="Search make or model..." aria-label="Search vehicles" />
+          <select id="fleetTierFilter" class="select-control" aria-label="Filter by subscription tier">
+            <option value="all">All Subscription Tiers</option>
+            <option value="Essential Flex">Essential Flex Tier</option>
+            <option value="Signature Reserve">Signature Reserve Tier</option>
+            <option value="Apex Bespoke">Apex Bespoke Tier</option>
+          </select>
+          <select id="fleetSortSelect" class="select-control" aria-label="Sort vehicles">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.75rem;">
+        <span id="fleetResultCount" class="badge badge-blue">Showing 9 Available Vehicles</span>
+        <span style="font-size: 0.875rem; color: var(--text-secondary);">All prices include insurance, maintenance &amp; 1,500 monthly miles</span>
+      </div>
+
+      <!-- 9-Vehicle Symmetric Grid (High-Contrast Image Badges + Single-Line Perks) -->
+      <div class="grid-3" id="fleetGrid">
+        <!-- 1. Porsche Taycan 4S -->
+        <article class="vehicle-card" data-category="Electric & Hybrid" data-tier="Apex Bespoke" data-price="139900" data-name="&copy; 2026 Porsche Taycan 4S Cross Turismo">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Porsche Taycan 4S Cross Turismo" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-amber">Apex Bespoke</span>
+              <span class="badge badge-emerald">Available Today</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Electric &amp; Hybrid • Dual-Motor AWD</div>
+            <h3 class="vehicle-title">&copy; 2026 Porsche Taycan 4S</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">562 HP</span>
+                <span class="spec-pill-lbl">Overboost</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">3.6 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">315 mi</span>
+                <span class="spec-pill-lbl">EPA Range</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">800V Fast Charge</span>
+              <span class="perk-chip">Air Suspension</span>
+              <span class="perk-chip">₹0 Deductible Ins.</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹1,39,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="taycan-4s">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. BMW i5 M60 -->
+        <article class="vehicle-card" data-category="Luxury Sedans" data-tier="Signature Reserve" data-price="98900" data-name="&copy; 2026 BMW i5 M60 xDrive Sedan">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 BMW i5 M60 xDrive Sedan" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-blue">Signature Reserve</span>
+              <span class="badge badge-emerald">Available Today</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Luxury Sedans • Executive AWD</div>
+            <h3 class="vehicle-title">&copy; 2026 BMW i5 M60 xDrive</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">590 HP</span>
+                <span class="spec-pill-lbl">Dual Motor</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">3.7 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">295 mi</span>
+                <span class="spec-pill-lbl">EPA Range</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">Bowers &amp; Wilkins</span>
+              <span class="perk-chip">Highway Assist</span>
+              <span class="perk-chip">2 Swaps/Mo</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹98,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="bmw-i5-m60">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2b. Mercedes-Benz S 580e L Executive Sedan -->
+        <article class="vehicle-card" data-category="Luxury Sedans" data-tier="Signature Reserve" data-price="118900" data-name="&copy; 2026 Mercedes-Benz S 580e L Executive Sedan">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Mercedes-Benz S 580e L Executive Sedan" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-blue">Signature Reserve</span>
+              <span class="badge badge-emerald">Available Today</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Luxury Sedans • Executive Plug-In Hybrid</div>
+            <h3 class="vehicle-title">&copy; 2026 Mercedes-Benz S 580e L</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">510 HP</span>
+                <span class="spec-pill-lbl">Inline-6 Hybrid</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">4.8 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">100 km</span>
+                <span class="spec-pill-lbl">Pure EV Range</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">Burmester 4D Audio</span>
+              <span class="perk-chip">Executive Lounge</span>
+              <span class="perk-chip">2 Swaps/Mo</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹1,18,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="bmw-i5-m60">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Rivian R1S -->
+        <article class="vehicle-card" data-category="Performance SUVs" data-tier="Apex Bespoke" data-price="124900" data-name="&copy; 2026 Rivian R1S Ascend Tri-Motor">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Rivian R1S Ascend Tri-Motor" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-amber">Apex Bespoke</span>
+              <span class="badge badge-emerald">In Stock</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Performance SUVs • 7-Passenger</div>
+            <h3 class="vehicle-title">&copy; 2026 Rivian R1S Ascend</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">850 HP</span>
+                <span class="spec-pill-lbl">Tri-Motor</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">2.9 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">370 mi</span>
+                <span class="spec-pill-lbl">EPA Range</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">3-Row Luxury</span>
+              <span class="perk-chip">Camp Mode</span>
+              <span class="perk-chip">Roof Rack Incl.</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹1,24,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="rivian-r1s">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Mercedes-AMG CLE 53 Coupe -->
+        <article class="vehicle-card" data-category="Executive Coupes" data-tier="Signature Reserve" data-price="104900" data-name="&copy; 2026 Mercedes-AMG CLE 53 Coupe">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Mercedes-AMG CLE 53 Coupe" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-blue">Signature Reserve</span>
+              <span class="badge badge-emerald">Ready in 24h</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Executive Coupes • 4MATIC+</div>
+            <h3 class="vehicle-title">&copy; 2026 Mercedes-AMG CLE 53</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">443 HP</span>
+                <span class="spec-pill-lbl">Bi-Turbo I6</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">4.0 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">440 mi</span>
+                <span class="spec-pill-lbl">Hwy Range</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">Rear-Axle Steer</span>
+              <span class="perk-chip">Burmester 3D</span>
+              <span class="perk-chip">AMG Night Pkg</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹1,04,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="mercedes-cle53">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. Polestar 3 Long Range -->
+        <article class="vehicle-card" data-category="Electric & Hybrid" data-tier="Essential Flex" data-price="74900" data-name="&copy; 2026 Polestar 3 Long Range Dual Motor">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Polestar 3 Long Range Dual Motor" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-purple">Essential Flex</span>
+              <span class="badge badge-emerald">Available Today</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Electric &amp; Hybrid • Nordic Crossover</div>
+            <h3 class="vehicle-title">&copy; 2026 Polestar 3 Dual Motor</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">489 HP</span>
+                <span class="spec-pill-lbl">Torque Vector</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">4.6 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">350 mi</span>
+                <span class="spec-pill-lbl">EPA Range</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">LiDAR Pilot</span>
+              <span class="perk-chip">Nappa Cabin</span>
+              <span class="perk-chip">1,500 mi/mo</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹74,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="polestar-3">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Audi RS6 Avant -->
+        <article class="vehicle-card" data-category="Performance SUVs" data-tier="Apex Bespoke" data-price="149900" data-name="&copy; 2026 Audi RS6 Avant Performance">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Audi RS6 Avant Performance" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-amber">Apex Bespoke</span>
+              <span class="badge badge-emerald">2 Units Left</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Performance SUVs &amp; Wagons • Quattro</div>
+            <h3 class="vehicle-title">&copy; 2026 Audi RS6 Avant</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">621 HP</span>
+                <span class="spec-pill-lbl">4.0L V8 TFSI</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">3.3 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">59 cu ft</span>
+                <span class="spec-pill-lbl">Cargo Bay</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">Carbon Brakes</span>
+              <span class="perk-chip">RS Exhaust</span>
+              <span class="perk-chip">₹0 Deductible</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹1,49,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="audi-rs6">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Genesis GV80 3.5T Prestige -->
+        <article class="vehicle-card" data-category="Performance SUVs" data-tier="Signature Reserve" data-price="89900" data-name="&copy; 2026 Genesis GV80 3.5T Prestige Coupe">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Genesis GV80 3.5T Prestige" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-blue">Signature Reserve</span>
+              <span class="badge badge-emerald">Available Today</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Performance SUVs • AWD Flagship</div>
+            <h3 class="vehicle-title">&copy; 2026 Genesis GV80 3.5T</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">409 HP</span>
+                <span class="spec-pill-lbl">Twin-Turbo</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">5.1 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">27-in</span>
+                <span class="spec-pill-lbl">OLED Display</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">Massage Seats</span>
+              <span class="perk-chip">B&amp;O 3D Audio</span>
+              <span class="perk-chip">2 Swaps/Mo</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹89,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="genesis-gv80">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. Tesla Model 3 Performance -->
+        <article class="vehicle-card" data-category="Electric & Hybrid" data-tier="Essential Flex" data-price="64900" data-name="&copy; 2026 Tesla Model 3 Performance Highland">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Tesla Model 3 Performance Highland" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-purple">Essential Flex</span>
+              <span class="badge badge-emerald">Express Delivery</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Electric &amp; Hybrid • Dual-Motor AWD</div>
+            <h3 class="vehicle-title">&copy; 2026 Tesla Model 3 Perf</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">510 HP</span>
+                <span class="spec-pill-lbl">AWD Track</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">2.9 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">303 mi</span>
+                <span class="spec-pill-lbl">EPA Range</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">Track Damping</span>
+              <span class="perk-chip">Supercharger</span>
+              <span class="perk-chip">Full Insurance</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹64,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="tesla-model3-perf">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Porsche 911 Carrera GTS Hybrid -->
+        <article class="vehicle-card" data-category="Executive Coupes" data-tier="Apex Bespoke" data-price="179900" data-name="&copy; 2026 Porsche 911 Carrera GTS Hybrid">
+          <div class="vehicle-img-wrap">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="&copy; 2026 Porsche 911 Carrera GTS Hybrid" />
+            <div class="vehicle-badges-top">
+              <span class="badge badge-amber">Apex Bespoke</span>
+              <span class="badge badge-emerald">Available Today</span>
+            </div>
+          </div>
+          <div class="vehicle-body">
+            <div class="vehicle-meta-top">Executive Coupes • T-Hybrid Coupe</div>
+            <h3 class="vehicle-title">&copy; 2026 Porsche 911 GTS</h3>
+            <div class="vehicle-specs-grid">
+              <div class="spec-pill">
+                <span class="spec-pill-val">532 HP</span>
+                <span class="spec-pill-lbl">T-Hybrid</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">2.9 sec</span>
+                <span class="spec-pill-lbl">0-60 mph</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-pill-val">PDK 8-Spd</span>
+                <span class="spec-pill-lbl">Sport Chrono</span>
+              </div>
+            </div>
+            <div class="vehicle-perks">
+              <span class="perk-chip">Front Axle Lift</span>
+              <span class="perk-chip">BOSE Surround</span>
+              <span class="perk-chip">₹0 Deductible Ins.</span>
+            </div>
+            <div class="vehicle-footer">
+              <div class="price-block">
+                <span class="price-amount">₹1,79,900</span>
+                <span class="price-period">/month all-in</span>
+              </div>
+              <button type="button" class="btn btn-primary btn-sm" data-vehicle-modal="porsche-911-carrera">Inspect Specs</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 150-POINT FLEET QUALITY & DELIVERY GUARANTEE (HALF IMAGE / HALF CONTENT CARDS) ==================== -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Showroom Quality Standard</span>
+        <h2 class="section-title">Every Vehicle Passes Our 150-Point Concierge Protocol</h2>
+        <p class="section-desc">
+          Unlike peer-to-peer car sharing or airport rental lots, VeloceDrive owns and maintains 100% of our fleet through factory-certified technicians.
+        </p>
+      </div>
+
+      <div class="grid-3">
+        <article class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80" alt="OEM Telemetry and Tire Depth Check" />
+          </div>
+          <div class="card-body-half">
+            <h3>OEM Telemetry &amp; Tire Depth Check</h3>
+            <p>
+              Before every delivery, we verify battery state-of-health, brake pad thickness, alignment, and ensure tire tread exceeds 7/32" across all four corners.
+            </p>
+          </div>
+        </article>
+
+        <article class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=900&q=80" alt="Ceramic Detail and Cabin Sanitization" />
+          </div>
+          <div class="card-body-half">
+            <h3>Ceramic Detail &amp; Cabin Sanitization</h3>
+            <p>
+              Each interior undergoes steam leather conditioning, HEPA cabin filter replacement, and exterior hand-wash with hydrophobic paint protection.
+            </p>
+          </div>
+        </article>
+
+        <article class="half-media-card">
+          <div class="card-img-half">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=80" alt="Delivered at 90% Charge or Full Tank" />
+          </div>
+          <div class="card-body-half">
+            <h3>Delivered at 90%+ Charge or Full Tank</h3>
+            <p>
+              Your concierge specialist pre-pairs your smartphone digital key, sets your seat memory profile, and delivers the car ready for immediate highway travel.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VEHICLE SPEC MODAL ==================== -->
+  <div class="modal-backdrop" id="vehicleSpecModal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeVehicleModal">✕</button>
+      <span class="badge badge-blue" id="modalVehicleCat">Electric &amp; Hybrid • Apex Bespoke</span>
+      <h3 id="modalVehicleName" style="font-size: 1.6rem; margin: 0.75rem 0 0.5rem;">&copy; 2026 Porsche Taycan 4S</h3>
+      <p id="modalVehicleDesc" style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;"></p>
+
+      <div class="grid-2" style="gap: 1rem; margin-bottom: 1.5rem;">
+        <div class="addon-toggle-row" style="margin:0;">
+          <span style="color: var(--text-secondary); font-size: 0.85rem;">Powertrain</span>
+          <strong id="modalSpecPower">562 HP AWD</strong>
+        </div>
+        <div class="addon-toggle-row" style="margin:0;">
+          <span style="color: var(--text-secondary); font-size: 0.85rem;">0-60 Acceleration</span>
+          <strong id="modalSpecAccel">3.6s 0-60</strong>
+        </div>
+        <div class="addon-toggle-row" style="margin:0;">
+          <span style="color: var(--text-secondary); font-size: 0.85rem;">Range / Capacity</span>
+          <strong id="modalSpecRange">315 mi EPA</strong>
+        </div>
+        <div class="addon-toggle-row" style="margin:0;">
+          <span style="color: var(--text-secondary); font-size: 0.85rem;">Seating</span>
+          <strong id="modalSpecSeats">4 Adults + Cargo</strong>
+        </div>
+        <div class="addon-toggle-row" style="margin:0;">
+          <span style="color: var(--text-secondary); font-size: 0.85rem;">Insurance</span>
+          <strong id="modalSpecIns" style="color: var(--accent-emerald);">Included</strong>
+        </div>
+        <div class="addon-toggle-row" style="margin:0;">
+          <span style="color: var(--text-secondary); font-size: 0.85rem;">Concierge Delivery</span>
+          <strong id="modalSpecDeliv">Same-Day</strong>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1rem; border-top: 1px solid var(--border-color);">
+        <div>
+          <span style="font-size: 0.8rem; color: var(--text-secondary);">All-Inclusive Monthly Subscription</span>
+          <div id="modalVehiclePrice" style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 800; color: var(--accent-primary);">₹1,39,900/mo</div>
+        </div>
+        <a href="login.html" class="btn btn-primary">Subscribe to This Vehicle →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+                <path d="M8 11l4 6 4-6"></path>
+                <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="brand-logo-text">
+              <span>Veloce<span class="accent">Drive</span></span>
+              <span class="brand-logo-sub">Luxury Mobility</span>
+            </span>
+          </a>
+          <div class="footer-social-links">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on X" title="Follow on X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Instagram" title="Follow on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Connect with VeloceDrive on LinkedIn" title="Connect on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Facebook" title="Follow on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Mobility Platform</h4>
+          <div class="footer-links">
+            <a href="fleet.html">Browse Fleet by Category</a>
+            <a href="pricing.html">Subscription Pricing Tiers</a>
+            <a href="services.html">Concierge Fleet Services</a>
+            <a href="dashboard.html">Subscriber Command Center</a>
+            
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Vehicle Categories</h4>
+          <div class="footer-links">
+            <a href="fleet.html">Electric &amp; Hybrid Flagships</a>
+            <a href="fleet.html">Executive Luxury Sedans</a>
+            <a href="fleet.html">Performance &amp; 7-Seat SUVs</a>
+            <a href="pricing.html">Corporate Fleet Leasing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">24/7 Subscriber Support</h4>
+          <div class="footer-links">
+            <a href="contact.html">Book Doorstep Concierge</a>
+            <a href="contact.html">1-800-VELOCE-DRIVE</a>
+            <a href="contact.html">concierge@velocedrive.io</a>
+            <a href="dashboard.html">Manage Billing &amp; Mileage</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 VeloceDrive Mobility Inc. All rights reserved. Equal Housing &amp; Mobility Opportunity.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

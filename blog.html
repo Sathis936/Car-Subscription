@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobility Insights &amp; Editorial Blog — VeloceDrive</title>
+  <meta name="description" content="Explore in-depth articles on luxury car subscription economics, EV technology breakthroughs, weekend vehicle swaps, and corporate fleet strategies in India." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='24' height='24' rx='5' fill='%230b0f19'/%3E%3Cpath d='M12 2.5L3.5 7.2v5.8c0 5.3 3.6 10.2 8.5 11.5 4.9-1.3 8.5-6.2 8.5-11.5V7.2L12 2.5z' fill='%23151d2f' stroke='%23f97316' stroke-width='1.6'/%3E%3Cpath d='M8 11.5l4 5 4-5' stroke='%23ffffff' stroke-width='2.2'/%3E%3Ccircle cx='12' cy='7.8' r='1.6' fill='%23f97316' stroke='none'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== SITE NAVBAR (STICKY HEADER) ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" title="VeloceDrive Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+            <path d="M8 11l4 6 4-6"></path>
+            <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+          </svg>
+        </span>
+        <span class="brand-logo-text">
+          <span>Veloce<span class="accent">Drive</span></span>
+          <span class="brand-logo-sub">Luxury Mobility</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle nav-link" id="homeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu" id="homeDropdownMenu" aria-labelledby="homeDropdownBtn">
+            <a href="index.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 1</span>
+                <span class="dropdown-sub">Signature Showcase</span>
+              </div>
+            </a>
+            <a href="home2.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 2</span>
+                <span class="dropdown-sub">Executive Edition</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="fleet.html" class="nav-link">Vehicle Fleet</a>
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+        <a href="pricing.html" class="nav-link">Pricing Plans</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="login.html" class="btn btn-primary btn-sm btn-block">Sign In / Login</a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle color theme"></button>
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" type="button" aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION: EDITORIAL & MOBILITY INSIGHTS ==================== -->
+  <section class="hero-section hero-blog">
+    <div class="container hero-container">
+      <span class="hero-badge">
+        <span>● Thought Leadership &amp; Automotive Intelligence</span>
+      </span>
+      <h1 class="hero-title">VeloceDrive <span class="text-gradient">Mobility Insights</span></h1>
+      <p class="hero-subtitle">
+        Authoritative analyses on the subscription revolution, total cost of luxury vehicle access in Indian Rupees, 800V EV charging infrastructure, and the death of traditional 5-year auto debt.
+      </p>
+      <div class="hero-actions">
+        <a href="#featuredPost" class="btn btn-primary btn-lg">Read Featured Story ↓</a>
+        <a href="#articleGrid" class="btn btn-hero-glass btn-lg">Browse All Articles</a>
+      </div>
+      <div class="hero-metrics">
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">45+</span>
+          <span class="hero-metric-label">Published Whitepapers &amp; Guides</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">120K+</span>
+          <span class="hero-metric-label">Monthly Industry Readers</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">100% Free</span>
+          <span class="hero-metric-label">Open Mobility Intelligence</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">Weekly</span>
+          <span class="hero-metric-label">Curated Fleet Briefings</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED EDITORIAL LEAD STORY ==================== -->
+  <section id="featuredPost" style="padding-top: 3.5rem;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Editorial</span>
+        <h2 class="section-title">Cover Story of the Month</h2>
+        <p class="section-desc">
+          Deep-dive analysis into macroeconomic shifts transforming luxury mobility across Mumbai, Delhi NCR, and Bengaluru.
+        </p>
+      </div>
+
+      <article class="half-media-card" style="display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md);">
+        <div class="card-img-half" style="height: 100%; min-height: 380px;">
+          <a href="pricing.html" title="Read Full Financial Analysis &amp; Subscription Economics" style="display: block; height: 100%;">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80" alt="Executive Sports Car Highway Drive" style="width: 100%; height: 100%; object-fit: cover;" />
+          </a>
+        </div>
+        <div class="card-body-half" style="padding: 2.75rem 2.25rem; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; gap: 0.65rem; align-items: center; margin-bottom: 1rem; flex-wrap: wrap;">
+              <span class="badge badge-emerald">Mobility Economics</span>
+              <span style="font-size: 0.82rem; color: var(--text-secondary);">October 12, 2026 • 6 min read</span>
+            </div>
+            <h3 style="font-size: 1.85rem; font-weight: 800; line-height: 1.3; margin-bottom: 1rem; color: var(--text-primary);">
+              <a href="pricing.html" class="blog-post-title-link">
+                The Financial Shift: Why India's Top Executives Are Choosing Car Subscriptions Over ₹20 Lakh Down Payments
+              </a>
+            </h3>
+            <p style="font-size: 0.98rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+              Analyzing the real total cost of mobility: steep 40% two-year depreciation curves, ₹2.5 Cr capital opportunity cost, zero insurance deductibles, and corporate tax write-offs across Tier-1 metro executives.
+            </p>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-color); padding-top: 1.5rem; flex-wrap: wrap; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 0.85rem;">
+              <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80" alt="Vikramaditya Singhania" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-primary);" />
+              <div>
+                <strong style="display: block; font-size: 0.92rem; color: var(--text-primary);">Vikramaditya Singhania</strong>
+                <span style="font-size: 0.8rem; color: var(--text-secondary);">Fleet Strategy Director</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.65rem;">
+              <button type="button" class="btn btn-outline btn-sm blog-read-modal-btn" data-article-id="cover-story">Quick Read 📖</button>
+              <a href="pricing.html" class="btn btn-primary btn-sm">View Pricing Plans →</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ==================== CATEGORY FILTER & SEARCH BAR ==================== -->
+  <section id="articleGrid" class="section-alt">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 2.5rem;">
+        <div class="filter-tabs" id="blogFilterTabs" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button type="button" class="btn btn-sm btn-primary filter-btn active" data-category="all">All Articles (6)</button>
+          <button type="button" class="btn btn-sm btn-outline filter-btn" data-category="ev">Luxury EV Tech (2)</button>
+          <button type="button" class="btn btn-sm btn-outline filter-btn" data-category="swaps">Weekend Swaps (2)</button>
+          <button type="button" class="btn btn-sm btn-outline filter-btn" data-category="corporate">Corporate Fleets (1)</button>
+          <button type="button" class="btn btn-sm btn-outline filter-btn" data-category="care">OEM Diagnostics (1)</button>
+        </div>
+
+        <div style="position: relative; min-width: 260px; flex: 1; max-width: 360px;">
+          <input type="text" id="blogSearchInput" class="form-input" placeholder="Search insights &amp; guides..." style="padding-left: 2.5rem;" />
+          <svg style="position: absolute; left: 0.95rem; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--text-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </div>
+      </div>
+
+      <!-- ARTICLES GRID (6 INFORMATIVE CARDS) -->
+      <div class="grid-3" id="blogCardsContainer">
+
+        <!-- Article 1: EV Technology -->
+        <article class="half-media-card blog-post-card" data-category="ev" data-target-url="fleet.html" data-article-id="article-1" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: flex; flex-direction: column;">
+          <div class="card-img-half" style="height: 220px;">
+            <a href="fleet.html" title="Explore Electric Vehicle Fleet" style="display: block; height: 100%;">
+              <img src="https://images.unsplash.com/photo-1567818735868-e71b99932e29?auto=format&fit=crop&w=800&q=80" alt="High-Speed Electric Charging Infrastructure" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+          </div>
+          <div class="card-body-half" style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-blue">EV Technology</span>
+                <span style="font-size: 0.78rem; color: var(--text-secondary);">Oct 8, 2026 • 5 min</span>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.65rem; line-height: 1.35; color: var(--text-primary);">
+                <a href="fleet.html" class="blog-post-title-link">
+                  800V Architecture on Indian Expressways: Fast-Charging the Taycan 4S &amp; Lotus Eletre
+                </a>
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                A 1,200 km endurance audit of ultra-fast 350kW DC chargers connecting Mumbai, Pune, and Bengaluru tech corridors.
+              </p>
+            </div>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Ananya Deshmukh" class="blog-card-author-img" />
+                <span class="blog-card-author-name">Ananya Deshmukh</span>
+              </div>
+              <div class="blog-card-actions">
+                <button type="button" class="btn btn-outline btn-sm blog-read-modal-btn" data-article-id="article-1">Quick Read</button>
+                <a href="fleet.html" class="btn btn-primary btn-sm">Fleet →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2: Weekend Swaps -->
+        <article class="half-media-card blog-post-card" data-category="swaps" data-target-url="how-it-works.html" data-article-id="article-2" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: flex; flex-direction: column;">
+          <div class="card-img-half" style="height: 220px;">
+            <a href="how-it-works.html" title="Discover Concierge Swaps" style="display: block; height: 100%;">
+              <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=800&q=80" alt="Performance Car Mountain Scenic Route" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+          </div>
+          <div class="card-body-half" style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-amber">Lifestyle &amp; Swaps</span>
+                <span style="font-size: 0.78rem; color: var(--text-secondary);">Oct 4, 2026 • 4 min</span>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.65rem; line-height: 1.35; color: var(--text-primary);">
+                <a href="how-it-works.html" class="blog-post-title-link">
+                  Bespoke Weekend Swaps: Trading Your Commuter EV for an All-Terrain 7-Seat SUV
+                </a>
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                How subscribers seamlessly switch from weekday city whisper drives to weekend mountain expeditions in Goa and Himachal.
+              </p>
+            </div>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=120&q=80" alt="Rohan Malhotra" class="blog-card-author-img" />
+                <span class="blog-card-author-name">Rohan Malhotra</span>
+              </div>
+              <div class="blog-card-actions">
+                <button type="button" class="btn btn-outline btn-sm blog-read-modal-btn" data-article-id="article-2">Quick Read</button>
+                <a href="how-it-works.html" class="btn btn-primary btn-sm">Swaps →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3: Corporate Fleets -->
+        <article class="half-media-card blog-post-card" data-category="corporate" data-target-url="pricing.html" data-article-id="article-3" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: flex; flex-direction: column;">
+          <div class="card-img-half" style="height: 220px;">
+            <a href="pricing.html" title="View Corporate Fleet Leasing Tiers" style="display: block; height: 100%;">
+              <img src="https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?auto=format&fit=crop&w=800&q=80" alt="Corporate Fleet Luxury Sedans in Business District" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+          </div>
+          <div class="card-body-half" style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-purple">Corporate Fleet</span>
+                <span style="font-size: 0.78rem; color: var(--text-secondary);">Sep 29, 2026 • 7 min</span>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.65rem; line-height: 1.35; color: var(--text-primary);">
+                <a href="pricing.html" class="blog-post-title-link">
+                  Corporate Fleet Tax Optimization: Saving 30%+ with Consolidated Invoicing
+                </a>
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                How multinational enterprises in BKC and Cyber City structure executive lease perks without holding capital equipment on balance sheets.
+              </p>
+            </div>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Preeti Sengupta" class="blog-card-author-img" />
+                <span class="blog-card-author-name">Preeti Sengupta</span>
+              </div>
+              <div class="blog-card-actions">
+                <button type="button" class="btn btn-outline btn-sm blog-read-modal-btn" data-article-id="article-3">Quick Read</button>
+                <a href="pricing.html" class="btn btn-primary btn-sm">Pricing →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4: OEM Diagnostics & Care -->
+        <article class="half-media-card blog-post-card" data-category="care" data-target-url="about.html" data-article-id="article-4" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: flex; flex-direction: column;">
+          <div class="card-img-half" style="height: 220px;">
+            <a href="about.html" title="Discover Our Engineering Standards" style="display: block; height: 100%;">
+              <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=800&q=80" alt="Vehicle Telemetry and Diagnostics Inspection" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+          </div>
+          <div class="card-body-half" style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-emerald">Engineering &amp; Care</span>
+                <span style="font-size: 0.78rem; color: var(--text-secondary);">Sep 22, 2026 • 5 min</span>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.65rem; line-height: 1.35; color: var(--text-primary);">
+                <a href="about.html" class="blog-post-title-link">
+                  Inside Our 150-Point OEM Telemetry: Guaranteeing Factory-Fresh Performance
+                </a>
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                From battery state-of-health diagnostics to computerized wheel alignment and HEPA cabin sanitization before every vehicle handover.
+              </p>
+            </div>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=120&q=80" alt="Kabir Mehta" class="blog-card-author-img" />
+                <span class="blog-card-author-name">Kabir Mehta</span>
+              </div>
+              <div class="blog-card-actions">
+                <button type="button" class="btn btn-outline btn-sm blog-read-modal-btn" data-article-id="article-4">Quick Read</button>
+                <a href="about.html" class="btn btn-primary btn-sm">About Us →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5: VIP Concierge -->
+        <article class="half-media-card blog-post-card" data-category="swaps" data-target-url="contact.html" data-article-id="article-5" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: flex; flex-direction: column;">
+          <div class="card-img-half" style="height: 220px;">
+            <a href="contact.html" title="Book Doorstep Valet Concierge" style="display: block; height: 100%;">
+              <img src="https://images.unsplash.com/photo-1514316454349-750a7fd3da3a?auto=format&fit=crop&w=800&q=80" alt="Luxury Vehicle Airport Tarmac Delivery Handover" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+          </div>
+          <div class="card-body-half" style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-blue">VIP Concierge</span>
+                <span style="font-size: 0.78rem; color: var(--text-secondary);">Sep 16, 2026 • 4 min</span>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.65rem; line-height: 1.35; color: var(--text-primary);">
+                <a href="contact.html" class="blog-post-title-link">
+                  Doorstep Valet Deliveries: The New Normal for High-Net-Worth Mobility Performance
+                </a>
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                Behind the scenes of our white-glove arrival protocol at Mumbai CSMIA Terminal 2 and Indira Gandhi International Airport tarmac lounges.
+              </p>
+            </div>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&q=80" alt="Sameer Varma" class="blog-card-author-img" />
+                <span class="blog-card-author-name">Sameer Varma</span>
+              </div>
+              <div class="blog-card-actions">
+                <button type="button" class="btn btn-outline btn-sm blog-read-modal-btn" data-article-id="article-5">Quick Read</button>
+                <a href="contact.html" class="btn btn-primary btn-sm">Contact →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6: Autonomous Driving & Tech -->
+        <article class="half-media-card blog-post-card" data-category="ev" data-target-url="fleet.html" data-article-id="article-6" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; display: flex; flex-direction: column;">
+          <div class="card-img-half" style="height: 220px;">
+            <a href="fleet.html" title="Explore Autonomous &amp; EV Flagships" style="display: block; height: 100%;">
+              <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80" alt="Autonomous Hands-Free Highway Pilot Drive" style="width: 100%; height: 100%; object-fit: cover;" />
+            </a>
+          </div>
+          <div class="card-body-half" style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.75rem;">
+                <span class="badge badge-purple">Future Mobility</span>
+                <span style="font-size: 0.78rem; color: var(--text-secondary);">Sep 10, 2026 • 6 min</span>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.65rem; line-height: 1.35; color: var(--text-primary);">
+                <a href="fleet.html" class="blog-post-title-link">
+                  Autonomous Pilot Level 2+ in Metro Commutes: Real-World Highway Testing
+                </a>
+              </h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.25rem;">
+                Stress-testing lane centering, adaptive regenerative braking, and automated traffic-jam assist on India's busiest expressways.
+              </p>
+            </div>
+            <div class="blog-card-footer">
+              <div class="blog-card-author">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Tara Kapoor" class="blog-card-author-img" />
+                <span class="blog-card-author-name">Tara Kapoor</span>
+              </div>
+              <div class="blog-card-actions">
+                <button type="button" class="btn btn-outline btn-sm blog-read-modal-btn" data-article-id="article-6">Quick Read</button>
+                <a href="fleet.html" class="btn btn-primary btn-sm">Fleet →</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Empty Search State -->
+        <div id="blogEmptyState" class="blog-empty-state" style="display: none;">
+          <span style="font-size: 2.5rem; display: block; margin-bottom: 0.75rem;">🔍</span>
+          <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary);">No matching articles found</h3>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; max-width: 440px; margin: 0 auto 1.25rem;">
+            We couldn't find any mobility whitepapers or guides matching your query. Try searching for terms like "EV", "swaps", "corporate", or "tax".
+          </p>
+          <button type="button" class="btn btn-primary btn-sm" id="resetBlogFiltersBtn">Reset All Filters</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SUBSCRIBER INTELLIGENCE NEWSLETTER ==================== -->
+  <section>
+    <div class="container">
+      <div class="sustainability-card" style="text-align: center; max-width: 860px; margin: 0 auto; padding: 3.5rem 2.5rem;">
+        <span class="section-tag" style="background: rgba(249, 115, 22, 0.22); border-color: rgba(249, 115, 22, 0.6); color: #fb923c;">Curated Intelligence</span>
+        <h2 class="section-title" style="font-size: 2.2rem; margin-top: 0.85rem; margin-bottom: 1rem; color: #ffffff;">
+          Subscribe to the <span class="text-gradient">VeloceDrive Dispatch</span>
+        </h2>
+        <p style="font-size: 0.98rem; color: #cbd5e1; line-height: 1.7; max-width: 620px; margin: 0 auto 2rem;">
+          Join 28,000+ luxury automobile enthusiasts and business leaders receiving our weekly analysis on fleet releases, EV tax credits, and doorstep swap previews.
+        </p>
+
+        <form id="blogNewsletterForm" novalidate style="max-width: 560px; margin: 0 auto; width: 100%;">
+          <div style="display: flex; gap: 0.75rem; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 260px; text-align: left; position: relative;">
+              <input type="email" id="newsletterEmail" class="form-input" placeholder="Enter your business email..." required data-validate="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address (e.g. name@domain.com)" autocomplete="email" style="width: 100%; background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: #ffffff;" />
+              <span class="form-field-hint" style="display: none; text-align: left; margin-top: 0.35rem;"></span>
+            </div>
+            <button type="submit" id="newsletterSubmitBtn" class="btn btn-primary" style="white-space: nowrap; height: 46px; padding: 0 1.5rem;">Get Briefing →</button>
+          </div>
+        </form>
+        <span style="display: block; margin-top: 0.85rem; font-size: 0.78rem; color: #94a3b8;">Zero spam. Unsubscribe with 1-click at any time.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="margin-bottom: 1rem;">
+            <span class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+                <path d="M8 11l4 6 4-6"></path>
+                <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="brand-logo-text">
+              <span>Veloce<span class="accent">Drive</span></span>
+              <span class="brand-logo-sub">Luxury Mobility</span>
+            </span>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; max-width: 340px; margin-bottom: 1.25rem;">
+            Modern car subscription and flexible leasing service. Drive electric, luxury, and performance vehicles month-to-month with insurance, maintenance, and concierge swaps included.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on X" title="Follow on X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Instagram" title="Follow on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Connect with VeloceDrive on LinkedIn" title="Connect on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Facebook" title="Follow on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Mobility Platform</h4>
+          <div class="footer-links">
+            <a href="fleet.html">Browse Fleet by Category</a>
+            <a href="pricing.html">Subscription Pricing Tiers</a>
+            <a href="services.html">Concierge Fleet Services</a>
+            <a href="dashboard.html">Subscriber Command Center</a>
+            
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Vehicle Categories</h4>
+          <div class="footer-links">
+            <a href="fleet.html">Electric &amp; Hybrid Flagships</a>
+            <a href="fleet.html">Executive Luxury Sedans</a>
+            <a href="fleet.html">Performance &amp; 7-Seat SUVs</a>
+            <a href="pricing.html">Corporate Fleet Leasing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">24/7 Subscriber Support</h4>
+          <div class="footer-links">
+            <a href="contact.html">Book Doorstep Concierge</a>
+            <a href="contact.html">1-800-VELOCE-DRIVE</a>
+            <a href="contact.html">concierge@velocedrive.io</a>
+            <a href="dashboard.html">Manage Billing &amp; Mileage</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 VeloceDrive Mobility Inc. All rights reserved. Equal Housing &amp; Mobility Opportunity.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== ARTICLE READER MODAL (FULL EDITORIAL EXPERIENCE) ==================== -->
+  <div class="blog-modal-backdrop" id="blogArticleModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="blog-modal-dialog">
+      <div class="blog-modal-header">
+        <div>
+          <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap;">
+            <span class="badge badge-emerald" id="modalArticleBadge">Mobility Economics</span>
+            <span style="font-size: 0.8rem; color: var(--text-secondary);" id="modalArticleMeta">October 12, 2026 • 6 min read</span>
+          </div>
+          <h2 style="font-size: 1.45rem; font-weight: 800; line-height: 1.35; color: var(--text-primary); margin: 0;" id="modalArticleTitle">
+            Article Title
+          </h2>
+        </div>
+        <button type="button" class="blog-modal-close" id="modalCloseBtn" aria-label="Close article modal">&times;</button>
+      </div>
+
+      <div class="blog-modal-body">
+        <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+          <img src="" alt="" id="modalAuthorImg" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent-primary);" />
+          <div>
+            <strong style="display: block; font-size: 0.95rem; color: var(--text-primary);" id="modalAuthorName">Author Name</strong>
+            <span style="font-size: 0.8rem; color: var(--text-secondary);" id="modalAuthorRole">Author Title</span>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 1.5rem; border-radius: var(--radius-md); overflow: hidden; height: 280px;">
+          <img src="" alt="" id="modalCoverImg" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+
+        <div class="blog-modal-takeaways" id="modalTakeaways">
+          <strong style="display: block; font-size: 0.9rem; color: var(--accent-primary); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Key Takeaways &amp; Data Points:</strong>
+          <ul id="modalTakeawaysList" style="list-style: disc; padding-left: 1.25rem; font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;">
+          </ul>
+        </div>
+
+        <div id="modalArticleText" style="font-size: 0.98rem; line-height: 1.8; color: var(--text-secondary); display: flex; flex-direction: column; gap: 1rem;">
+        </div>
+      </div>
+
+      <div class="blog-modal-footer">
+        <button type="button" class="btn btn-outline btn-sm" id="modalFooterCloseBtn">Close Article</button>
+        <a href="fleet.html" class="btn btn-primary btn-sm" id="modalActionLink">Proceed to Page →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

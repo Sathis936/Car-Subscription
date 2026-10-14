@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concierge Mobility Services &amp; Fleet Care — VeloceDrive</title>
+  <meta name="description" content="Discover VeloceDrive's all-inclusive concierge mobility services: doorstep delivery, vehicle swaps, certified OEM maintenance, ceramic detailing, 24/7 roadside assistance, and corporate fleets." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='24' height='24' rx='5' fill='%230b0f19'/%3E%3Cpath d='M12 2.5L3.5 7.2v5.8c0 5.3 3.6 10.2 8.5 11.5 4.9-1.3 8.5-6.2 8.5-11.5V7.2L12 2.5z' fill='%23151d2f' stroke='%23f97316' stroke-width='1.6'/%3E%3Cpath d='M8 11.5l4 5 4-5' stroke='%23ffffff' stroke-width='2.2'/%3E%3Ccircle cx='12' cy='7.8' r='1.6' fill='%23f97316' stroke='none'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== STICKY NAVIGATION HEADER ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo" title="VeloceDrive Home">
+        <span class="brand-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+            <path d="M8 11l4 6 4-6"></path>
+            <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+          </svg>
+        </span>
+        <span class="brand-logo-text">
+          <span>Veloce<span class="accent">Drive</span></span>
+          <span class="brand-logo-sub">Luxury Mobility</span>
+        </span>
+      </a>
+
+      <!-- Main Navigation Menu (Strict User Hierarchy) -->
+      <nav class="nav-menu" id="navMenu">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-dropdown-toggle nav-link" id="homeDropdownBtn" aria-expanded="false" aria-haspopup="true">
+            <span>Home</span>
+            <svg class="dropdown-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="nav-dropdown-menu" id="homeDropdownMenu" aria-labelledby="homeDropdownBtn">
+            <a href="index.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 1</span>
+                <span class="dropdown-sub">Signature Showcase</span>
+              </div>
+            </a>
+            <a href="home2.html" class="dropdown-item">
+              <div class="dropdown-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+              </div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-title">Home 2</span>
+                <span class="dropdown-sub">Executive Edition</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="fleet.html" class="nav-link">Vehicle Fleet</a>
+        <a href="how-it-works.html" class="nav-link">How It Works</a>
+        <a href="pricing.html" class="nav-link">Pricing Plans</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <div class="mobile-nav-actions">
+          <a href="login.html" class="btn btn-primary btn-sm btn-block">Sign In / Login</a>
+        </div>
+      </nav>
+
+      <!-- Action Buttons (No Dashboard button here) -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle color theme"></button>
+        <button class="rtl-toggle-btn" id="rtlToggleBtn" type="button" aria-label="Toggle text direction" title="Toggle RTL / LTR layout">RTL</button>
+        <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CONSISTENT CENTER-ALIGNED HERO SECTION ==================== -->
+  <section class="hero-section hero-services">
+    <div class="container hero-container">
+      <span class="hero-badge">
+        <span>● Concierge Mobility Ecosystem</span>
+      </span>
+      <h1 class="hero-title">End-to-End <span class="text-gradient">Concierge Care</span> for Every Journey</h1>
+      <p class="hero-subtitle">
+        From white-glove doorstep delivery and zero-liability factory maintenance to on-demand model swaps and 24/7 roadside charging rescue — experience absolute automotive freedom with zero depreciation risk.
+      </p>
+      
+      <div class="hero-metrics">
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">100% Doorstep</span>
+          <span class="hero-metric-label">White-Glove Vehicle Handover</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">45-Min SLA</span>
+          <span class="hero-metric-label">Pan-India Roadside Response</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">₹0 Liability</span>
+          <span class="hero-metric-label">Scheduled Factory Maintenance</span>
+        </div>
+        <div class="hero-metric-item">
+          <span class="hero-metric-value">18 Hubs</span>
+          <span class="hero-metric-label">Tier-1 Airport Valet Lounges</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES CATALOG WITH FILTER TABS ==================== -->
+  <section id="servicesCatalog" class="section">
+    <div class="container">
+
+      <!-- Interactive Filter Tabs -->
+      <div class="service-filter-tabs" id="serviceFilterTabs">
+        <button type="button" class="service-tab-btn active" data-filter="all">All Services</button>
+        <button type="button" class="service-tab-btn" data-filter="delivery">White-Glove &amp; Delivery</button>
+        <button type="button" class="service-tab-btn" data-filter="swaps">Vehicle Swaps</button>
+        <button type="button" class="service-tab-btn" data-filter="care">Maintenance &amp; Detailing</button>
+        <button type="button" class="service-tab-btn" data-filter="corporate">Corporate Mobility</button>
+      </div>
+
+      <!-- 6 Service Cards Grid (Using 6 Verified 100% Unique 200 OK Images) -->
+      <div class="services-grid" id="servicesGrid">
+
+        <!-- Service 1: White-Glove Delivery -->
+        <article class="service-card" data-category="delivery">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1563720223523-491ff04651de?auto=format&fit=crop&w=800&q=80" alt="White-Glove Doorstep Delivery & Orientation" loading="lazy" />
+          </div>
+          <div class="service-card-content">
+            <span class="service-category-tag">Delivery &amp; Orientation</span>
+            <h3 class="service-card-title">White-Glove Doorstep Delivery &amp; Digital Orientation</h3>
+            <p class="service-card-desc">
+              Your assigned vehicle arrives freshly sanitized, fully charged or fueled, directly at your residence, office, or private hangar with a master technician orientation.
+            </p>
+            <ul class="service-feature-list">
+              <li><span class="service-feature-check">✓</span> <span>25-point digital walk-through &amp; ergonomic cabin setup</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Infotainment, Apple CarPlay/Android Auto &amp; ADAS sync</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Instant contactless digital handover &amp; e-sign verification</span></li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-sla-tag">Under 4 hours dispatch</span>
+              <button type="button" class="btn btn-primary btn-sm" data-service-trigger data-service-name="White-Glove Doorstep Delivery">Book Delivery</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 2: On-Demand Swaps -->
+        <article class="service-card" data-category="swaps">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1600790142055-619df03207e6?auto=format&fit=crop&w=800&q=80" alt="On-Demand Luxury Vehicle Swaps" loading="lazy" />
+          </div>
+          <div class="service-card-content">
+            <span class="service-category-tag">Flexible Mobility</span>
+            <h3 class="service-card-title">On-Demand Doorstep Vehicle Swaps</h3>
+            <p class="service-card-desc">
+              Switch seamlessly from your executive electric sedan to an all-wheel-drive 7-seat SUV for a mountain weekend retreat or an open-top sports coupe for coastal tours.
+            </p>
+            <ul class="service-feature-list">
+              <li><span class="service-feature-check">✓</span> <span>Up to 2 free doorstep swaps included monthly in Signature tier</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Simple key-for-key exchange executed in under 10 minutes</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Unused monthly swaps rollover automatically to your next cycle</span></li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-sla-tag"> 48h advance booking</span>
+              <button type="button" class="btn btn-primary btn-sm" data-service-trigger data-service-name="On-Demand Vehicle Swap">Schedule Swap</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 3: Certified OEM Maintenance -->
+        <article class="service-card" data-category="care">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?auto=format&fit=crop&w=800&q=80" alt="Certified Factory OEM Diagnostics & Maintenance" loading="lazy" />
+          </div>
+          <div class="service-card-content">
+            <span class="service-category-tag">Engineering &amp; Care</span>
+            <h3 class="service-card-title">Certified Factory OEM Maintenance &amp; Telemetry</h3>
+            <p class="service-card-desc">
+              Experience total peace of mind. Every vehicle is monitored through real-time IoT telemetry, triggering automated servicing at authorized Porsche, BMW, and Mercedes-Benz facilities.
+            </p>
+            <ul class="service-feature-list">
+              <li><span class="service-feature-check">✓</span> <span>100% factory original OEM parts, lubricants &amp; brake pads</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Free equivalent luxury courtesy car during any service interval</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Zero out-of-pocket bills for scheduled or predictive servicing</span></li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-sla-tag"> Proactive IoT monitoring</span>
+              <button type="button" class="btn btn-primary btn-sm" data-service-trigger data-service-name="OEM Maintenance & Inspection">Request Service</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 4: Ceramic Detailing -->
+        <article class="service-card" data-category="care">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80" alt="Ceramic Detailing & Interior Sanitization" loading="lazy" />
+          </div>
+          <div class="service-card-content">
+            <span class="service-category-tag">Aesthetic Preservation</span>
+            <h3 class="service-card-title">Precision Ceramic Detailing &amp; Steam Sanitization</h3>
+            <p class="service-card-desc">
+              Preserve your vehicle’s showroom shine. Our mobile detailing artisans visit your residence with specialized zero-water hydrophobic coatings and deep interior leather therapies.
+            </p>
+            <ul class="service-feature-list">
+              <li><span class="service-feature-check">✓</span> <span>Multi-stage paint decontamination &amp; ceramic hydrophobic seal</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Antimicrobial medical-grade steam extraction &amp; HVAC purge</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Nappa and merino leather reconditioning balm treatment</span></li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-sla-tag"> Executed at your parking bay</span>
+              <button type="button" class="btn btn-primary btn-sm" data-service-trigger data-service-name="Ceramic Detailing & Spa">Book Detailing</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 5: 24/7 Roadside & Mobile Charging -->
+        <article class="service-card" data-category="delivery">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1571127236794-81c0bbfe1ce3?auto=format&fit=crop&w=800&q=80" alt="24/7 Roadside Rescue & Mobile EV Charging" loading="lazy" />
+          </div>
+          <div class="service-card-content">
+            <span class="service-category-tag">Emergency Support</span>
+            <h3 class="service-card-title">24/7 Roadside Rescue &amp; Mobile EV Fast Charging</h3>
+            <p class="service-card-desc">
+              Never get stranded. Our dedicated highway rescue fleet delivers rapid mobile battery charging, flatbed vehicle transport, and computerized lockout and tire bypass.
+            </p>
+            <ul class="service-feature-list">
+              <li><span class="service-feature-check">✓</span> <span>Mobile fast-charge booster: 60 km emergency range in 15 mins</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Hydraulic zero-angle flatbed towing to certified facilities</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Immediate replacement vehicle dispatch for roadside breakdowns</span></li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-sla-tag"> 24/7 National Dispatch</span>
+              <button type="button" class="btn btn-primary btn-sm" data-service-trigger data-service-name="Roadside Rescue & Mobile Charging">Request Rescue</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 6: Executive Corporate Mobility -->
+        <article class="service-card" data-category="corporate">
+          <div class="service-card-media">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Executive Corporate Mobility & Fleet Programs" loading="lazy" />
+          </div>
+          <div class="service-card-content">
+            <span class="service-category-tag">Enterprise Mobility</span>
+            <h3 class="service-card-title">Executive Corporate Mobility &amp; Custom Fleets</h3>
+            <p class="service-card-desc">
+              Empower your leadership and high-performing executives with turnkey luxury fleets, unified monthly invoicing, tax-optimized off-balance-sheet structures, and zero resale risk.
+            </p>
+            <ul class="service-feature-list">
+              <li><span class="service-feature-check">✓</span> <span>Consolidated enterprise billing with GST 18% input credit support</span></li>
+              <li><span class="service-feature-check">✓</span> <span>Dedicated VIP Fleet Director &amp; multi-user digital access management</span></li>
+              <li><span class="service-feature-check">✓</span> <span>30-day flexible lease roll-offs without penal cancellation clauses</span></li>
+            </ul>
+            <div class="service-card-footer">
+              <span class="service-sla-tag"> Dedicated Fleet Director</span>
+              <button type="button" class="btn btn-primary btn-sm" data-service-trigger data-service-name="Executive Corporate Mobility Program">Consult Corporate</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ==================== TIER SERVICE INCLUSIONS TABLE ==================== -->
+      <div style="margin-top: 4rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 2.5rem 2rem;">
+        <div class="text-center" style="margin-bottom: 2rem;">
+          <span class="badge badge-amber">Subscription Tier Entitlements</span>
+          <h2 style="font-size: 1.85rem; font-weight: 800; margin-top: 0.5rem;">Which Services Are Included In Your Plan?</h2>
+          <p style="color: var(--text-secondary); max-width: 650px; margin: 0.4rem auto 0;">All plans include zero-maintenance overhead, full insurance coverage, and 24/7 concierge assistance.</p>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; min-width: 650px;">
+            <thead>
+              <tr style="border-bottom: 2px solid var(--border-color);">
+                <th style="padding: 1rem; color: var(--text-primary); font-weight: 800;">Concierge Service</th>
+                <th style="padding: 1rem; color: var(--text-primary); font-weight: 800; text-align: center;">Essential Tier<br /><span style="font-size: 0.78rem; color: var(--text-secondary); font-weight: 500;">₹59,900/mo</span></th>
+                <th style="padding: 1rem; color: var(--accent-primary); font-weight: 800; text-align: center;">Signature Reserve<br /><span style="font-size: 0.78rem; color: var(--text-secondary); font-weight: 500;">₹98,900/mo</span></th>
+                <th style="padding: 1rem; color: var(--text-primary); font-weight: 800; text-align: center;">Apex Bespoke<br /><span style="font-size: 0.78rem; color: var(--text-secondary); font-weight: 500;">₹1,75,000/mo</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1rem; font-weight: 600;">White-Glove Doorstep Delivery</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ Included</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ Included</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ Priority 2h Delivery</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1rem; font-weight: 600;">Doorstep Vehicle Swaps</td>
+                <td style="padding: 1rem; text-align: center; color: var(--text-muted);">₹7,500 / swap</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ 2 Free / Month</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ Unlimited Swaps</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1rem; font-weight: 600;">OEM Servicing &amp; Telemetry</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ 100% Covered</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ 100% Covered</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ 100% Covered</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1rem; font-weight: 600;">Ceramic Detailing &amp; Spa</td>
+                <td style="padding: 1rem; text-align: center; color: var(--text-muted);">At Delivery Only</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ 1 Monthly Spa</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ Bi-Weekly Ceramic Care</td>
+              </tr>
+              <tr style="border-bottom: 1px solid var(--border-color);">
+                <td style="padding: 1rem; font-weight: 600;">24/7 Roadside &amp; Mobile Charging</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ Pan-India</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ 45-Min Guarantee</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ 30-Min Fast-Track</td>
+              </tr>
+              <tr>
+                <td style="padding: 1rem; font-weight: 600;">Airport Valet Lounges</td>
+                <td style="padding: 1rem; text-align: center; color: var(--text-muted);">Pay per drop</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ 18 Hubs Included</td>
+                <td style="padding: 1rem; text-align: center; color: var(--accent-emerald);">✓ VIP Private Gate Drop</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== INTERACTIVE SERVICE BOOKING MODAL ==================== -->
+  <div class="service-modal-overlay" id="serviceBookingModal" role="dialog" aria-modal="true" aria-labelledby="serviceModalHeading">
+    <div class="service-modal-dialog">
+      <div class="service-modal-header">
+        <div>
+          <span class="badge badge-amber" style="margin-bottom: 0.35rem;">Direct Dispatch</span>
+          <h3 id="serviceModalHeading" style="font-size: 1.35rem; font-weight: 800; margin: 0;">Schedule Concierge Service</h3>
+        </div>
+        <button type="button" class="blog-modal-close" id="closeServiceModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="service-modal-body">
+        <form id="serviceBookingForm" novalidate>
+          <div style="margin-bottom: 1.25rem;">
+            <label for="serviceModalType" style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.4rem;">Select Service</label>
+            <select id="serviceModalType" class="form-input" style="width: 100%;">
+              <option value="White-Glove Doorstep Delivery">White-Glove Doorstep Delivery &amp; Digital Orientation</option>
+              <option value="On-Demand Vehicle Swap">On-Demand Doorstep Vehicle Swap</option>
+              <option value="OEM Maintenance & Inspection">Certified OEM Maintenance &amp; Diagnostics</option>
+              <option value="Ceramic Detailing & Spa">Precision Ceramic Detailing &amp; Sanitization</option>
+              <option value="Roadside Rescue & Mobile Charging">24/7 Roadside Rescue &amp; Mobile EV Charging</option>
+              <option value="Executive Corporate Mobility Program">Executive Corporate Mobility Fleet Consultation</option>
+            </select>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+            <div>
+              <label for="serviceBookingName" style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.4rem;">Your Full Name *</label>
+              <input type="text" id="serviceBookingName" class="form-input" placeholder="Vikramaditya Roy" required data-validate="name" pattern="[A-Za-z\s]{2,50}" title="Letters alone should be entered" autocomplete="name" style="width: 100%;" />
+            </div>
+            <div>
+              <label for="serviceBookingPhone" style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.4rem;">Mobile Phone (Numbers Only) *</label>
+              <input type="tel" id="serviceBookingPhone" class="form-input" placeholder="9820012345" required data-validate="phone" pattern="[0-9]{10,15}" title="Numbers alone should be entered (at least 10 digits)" inputmode="numeric" autocomplete="tel" style="width: 100%;" />
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+            <div>
+              <label for="serviceBookingEmail" style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.4rem;">Email Address *</label>
+              <input type="email" id="serviceBookingEmail" class="form-input" placeholder="vikram@company.com" required data-validate="email" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address (e.g. name@domain.com)" autocomplete="email" style="width: 100%;" />
+            </div>
+            <div>
+              <label for="serviceBookingDate" style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.4rem;">Preferred Date *</label>
+              <input type="date" id="serviceBookingDate" class="form-input" required style="width: 100%;" />
+            </div>
+          </div>
+
+          <div style="margin-bottom: 1.25rem;">
+            <label for="serviceBookingHub" style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.4rem;">Metro Hub / City</label>
+            <select id="serviceBookingHub" class="form-input" style="width: 100%;">
+              <option value="mumbai">Mumbai — BKC &amp; Nariman Point</option>
+              <option value="delhi">Delhi NCR — Aerocity &amp; Gurugram</option>
+              <option value="bengaluru">Bengaluru — Indiranagar &amp; Whitefield</option>
+              <option value="hyderabad">Hyderabad — Hitec City &amp; Gachibowli</option>
+              <option value="chennai">Chennai — OMR &amp; Nungambakkam</option>
+              <option value="pune">Pune — Koregaon Park &amp; Baner</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="serviceBookingNotes" style="display: block; font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-bottom: 0.4rem;">Specific Vehicle Model or Special Instructions</label>
+            <textarea id="serviceBookingNotes" class="form-input" rows="3" placeholder="e.g. Current vehicle is Porsche Taycan. Requesting swap to Porsche Macan EV at BKC residence." style="width: 100%; resize: vertical;"></textarea>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 0.85rem;">
+            <button type="button" class="btn btn-outline" onclick="document.getElementById('serviceBookingModal').classList.remove('open'); document.body.style.overflow='';">Cancel</button>
+            <button type="submit" class="btn btn-primary"><span>Confirm Concierge Booking →</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== LUXURY FOOTER (CENTERED COPYRIGHTS & WORKING SOCIALS) ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="brand-logo" title="Back to Home">
+            <span class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"></path>
+                <path d="M8 11l4 6 4-6"></path>
+                <circle cx="12" cy="8" r="1.2" fill="currentColor"></circle>
+              </svg>
+            </span>
+            <span class="brand-logo-text">
+              <span>Veloce<span class="accent">Drive</span></span>
+              <span class="brand-logo-sub">Luxury Mobility</span>
+            </span>
+          </a>
+          <p class="footer-tagline">
+            India's foremost subscription platform for performance flagships, electric luxury crossovers, and bespoke corporate fleets.
+          </p>
+          <div class="footer-social-strip">
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on X" title="Follow on X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Instagram" title="Follow on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Connect with VeloceDrive on LinkedIn" title="Connect on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="9" y="9" width="4" height="12"></rect><circle cx="11" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Follow VeloceDrive on Facebook" title="Follow on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Mobility Platform</h4>
+          <div class="footer-links">
+            <a href="fleet.html">Browse Fleet by Category</a>
+            <a href="pricing.html">Subscription Pricing Tiers</a>
+            <a href="services.html">Concierge Fleet Services</a>
+            <a href="dashboard.html">Subscriber Command Center</a>
+            
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Vehicle Categories</h4>
+          <div class="footer-links">
+            <a href="fleet.html">Electric &amp; Hybrid Flagships</a>
+            <a href="fleet.html">Executive Luxury Sedans</a>
+            <a href="fleet.html">Performance &amp; 7-Seat SUVs</a>
+            <a href="pricing.html">Corporate Fleet Leasing</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">24/7 Subscriber Support</h4>
+          <div class="footer-links">
+            <a href="contact.html">Book Doorstep Concierge</a>
+            <a href="contact.html">1-800-VELOCE-DRIVE</a>
+            <a href="contact.html">concierge@velocedrive.io</a>
+            <a href="dashboard.html">Manage Billing &amp; Mileage</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 VeloceDrive Mobility Inc. All rights reserved. Equal Housing &amp; Mobility Opportunity.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
