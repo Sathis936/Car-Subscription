@@ -474,6 +474,29 @@ function initFleetCatalog() {
       if (e.target === modalBackdrop) modalBackdrop.classList.remove('open');
     });
   }
+
+  // Handle Subscribe / Reserve Button inside Vehicle Spec Modal
+  const modalSubBtn = document.getElementById('modalSubscribeBtn');
+  if (modalSubBtn) {
+    modalSubBtn.addEventListener('click', (e) => {
+      if (e) e.preventDefault();
+      const vehicleName = document.getElementById('modalVehicleName')?.textContent || 'Your selected vehicle';
+      modalSubBtn.disabled = true;
+      const originalText = modalSubBtn.innerHTML;
+      modalSubBtn.innerHTML = '<span>⚡ Reserving Vehicle...</span>';
+
+      setTimeout(() => {
+        if (modalBackdrop) modalBackdrop.classList.remove('open');
+        modalSubBtn.disabled = false;
+        modalSubBtn.innerHTML = originalText;
+        
+        localStorage.setItem('velocedrive_active_vehicle', vehicleName);
+        localStorage.setItem('velocedrive_logged_in', 'true');
+        
+        showToast(`🎉 Subscription Confirmed! ${vehicleName} has been reserved with ₹0 deposit. Doorstep delivery queued!`, 'success');
+      }, 400);
+    });
+  }
 }
 
 function openVehicleModal(key) {
@@ -781,16 +804,52 @@ function initLoginPortal() {
     }
   };
 
+  const switchPanel = (targetId) => {
+    if (!targetId) return;
+    authTabs.forEach((t) => {
+      if (t.dataset.target === targetId) {
+        t.classList.add('active');
+        t.setAttribute('aria-selected', 'true');
+      } else {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      }
+    });
+    authPanels.forEach((panel) => {
+      panel.style.display = panel.id === targetId ? 'block' : 'none';
+    });
+    const titleEl = document.getElementById('authCardTitle');
+    const subEl = document.getElementById('authCardSubtitle');
+    if (titleEl && subEl) {
+      if (targetId === 'registerPanel') {
+        titleEl.innerHTML = '<span class="text-gradient">Create Driver Account</span>';
+        subEl.textContent = 'Choose your preferred starting tier. Zero deposit charged until vehicle delivery.';
+      } else {
+        titleEl.innerHTML = '<span class="text-gradient">Sign In</span>';
+        subEl.textContent = 'Enter your credentials below to access your account.';
+      }
+    }
+  };
+
   authTabs.forEach((tab) => {
     tab.addEventListener('click', () => {
-      authTabs.forEach((t) => t.classList.remove('active'));
-      tab.classList.add('active');
       const targetId = tab.dataset.target;
-      authPanels.forEach((panel) => {
-        panel.style.display = panel.id === targetId ? 'block' : 'none';
-      });
+      switchPanel(targetId);
     });
   });
+
+  const authSwitchLinks = document.querySelectorAll('.auth-link-switch');
+  authSwitchLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.dataset.target;
+      switchPanel(targetId);
+    });
+  });
+
+  if (window.location.hash === '#register' || window.location.hash === '#create-account' || window.location.hash === '#registerPanel') {
+    switchPanel('registerPanel');
+  }
 
   const performLogin = (e) => {
     if (e) e.preventDefault();
@@ -834,27 +893,6 @@ function initLoginPortal() {
   const regBtn = document.getElementById('registerSubmitBtn');
   if (regBtn) {
     regBtn.addEventListener('click', performRegister);
-  }
-
-  const performCorpLogin = (e) => {
-    if (e) e.preventDefault();
-    const corporateForm = document.getElementById('corporateLoginForm');
-    if (corporateForm && typeof validateSingleForm === 'function' && !validateSingleForm(corporateForm)) {
-      return false;
-    }
-    localStorage.setItem('velocedrive_logged_in', 'true');
-    triggerLoginToast('Corporate Login Successful! Fleet console authenticated (Dummy Login — Redirect Disabled).');
-    return false;
-  };
-
-  const corporateForm = document.getElementById('corporateLoginForm');
-  if (corporateForm) {
-    corporateForm.addEventListener('submit', performCorpLogin);
-  }
-
-  const corpBtn = document.getElementById('corporateSubmitBtn');
-  if (corpBtn) {
-    corpBtn.addEventListener('click', performCorpLogin);
   }
 
   const demoLoginBtn = document.getElementById('instantDemoLoginBtn');
